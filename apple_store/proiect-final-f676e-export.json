@@ -1,0 +1,39 @@
+{
+  "phones" : [ {
+    "configuration" : "Viziunea noastra a fost dintotdeauna crearea unui iPhone cu ecran pe toata suprafata. Unul atat de captivant, incat dispozitivul in sine sa se piarda cu totul in experienta utilizarii. Si atat de inteligent incat sa raspunda la o atingere, la vocea ta si chiar la o privire. Cu iPhone X, acea viziune este acum realitate. Priveste direct in viitor.",
+    "image" : "https://s12emagst.akamaized.net/products/8892/8891494/images/res_d7d63673fac35dac5f93604c4a7bd059_450x450_5t3l.jpg",
+    "name" : "Apple iPhone X, 64GB, 4G, Space Grey",
+    "price" : 4249,
+    "stock" : 0
+  }, {
+    "configuration" : "iPhone 7 imbunatateste substantial cele mai importante aspecte care definesc experienta iPhone. Iti ofera noi sisteme avansate pentru camere. Cele mai bune performante si cea mai extinsa autonomie din toate timpurile pentru iPhone. Difuzoare stereo captivante. Cea mai mare luminozitate si cea mai bogata gama cromatica pentru un afisaj de iPhone. Rezistenta la stropire si apa. Un design pe masura performantelor. Acesta este iPhone 7.",
+    "image" : "https://s12emagst.akamaized.net/products/4159/4158442/images/res_bbdfaa9537747e2cd6dd46a657f9107b_450x450_q4h3.jpg",
+    "name" : "Apple iPhone 7, 32GB, Black",
+    "price" : 2199,
+    "stock" : 300
+  }, {
+    "configuration" : "De cand incepi sa folosesti iPhone 6s, simti ca experimentezi ceva cu totul nou. Cu o simpla apasare, 3D Touch iti permite sa faci mai multe ca niciodata. Live Photos da viata amintirilor intr-un mod incredibil de realist. Si acesta e doar inceputul. Daca-l analizezi in profunzime, iPhone 6s inoveaza la fiecare nivel.",
+    "image" : "https://s12emagst.akamaized.net/products/4159/4158442/images/res_bbdfaa9537747e2cd6dd46a657f9107b_450x450_q4h3.jpg",
+    "name" : "Apple iPhone 6s, 32GB, Space Grey",
+    "price" : 1599,
+    "stock" : 300
+  }, {
+    "configuration" : "Super Retina in doua dimensiuni - inclusiv cel mai mare ecran vazut vreodata la un iPhone. Face ID si mai rapid. Cel mai inteligent si mai puternic cip intalnit la un smartphone. Si un sistem revolutionar de camere duale cu Controlul adancimii de camp. iPhone XS Max reprezinta tot ceea ce iubesti la iPhone. Acum, la un nivel extrem.",
+    "image" : "https://s12emagst.akamaized.net/products/17043/17042936/images/res_b7d72e6da14bd46eaa5cbcd585d08ec2_450x450_hhed.jpg",
+    "name" : "Apple iPhone XS Max, 64GB, Gold",
+    "price" : 5599,
+    "stock" : 299
+  }, {
+    "configuration" : "Telefon mobil Apple iPhone XR, 64GB, Black Ecran Liquid Retina complet nou , cel mai avansat LCD din domeniu. Face ID si mai rapid. Cel mai inteligent si mai puternic cip intalnit la un smartphone. Si un sistem revolutionar de camere. iPhone XR. Este superb oricum l-ai privi. Iti prezentam Liquid Retina.",
+    "image" : "https://s12emagst.akamaized.net/products/17043/17042909/images/res_beeb2a5b938cd2fc51ad063da79f4321_450x450_ckv0.jpg",
+    "name" : "Apple iPhone XR, 64GB, Black",
+    "price" : 3649,
+    "stock" : 200
+  }, {
+    "configuration" : "iPhone 5S este proiectat pana la cele mai mici detalii cu o meticulozitate si o precizie specifica Apple. Nu este doar un produs care demonstreaza de ce e capabila tehnologia. Este ceva ce e util din punct de vedere tehnologic. Nu este doar ceea ce urmeaza, ci si ceea ce ar trebui sa urmeze",
+    "image" : "https://s12emagst.akamaized.net/products/17043/17042909/images/res_beeb2a5b938cd2fc51ad063da79f4321_450x450_ckv0.jpg",
+    "name" : "Apple iPhone 5S, 16GB, Gold",
+    "price" : 979,
+    "stock" : 197
+  } ]
+}

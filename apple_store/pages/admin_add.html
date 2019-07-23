@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="../css/admin_add.css" rel="stylesheet" type="text/css"> -->
+    <script src="../js/admin_add.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <title>Online shop-Admin</title>
+</head>
+
+<body>
+    <h1 class="text-center font-weight-light">Add products</h1>
+    <div>
+
+        <form class="w-50 mx-auto" id="myForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ex: iPhone X">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category" name="category">
+                    <option>Phone</option>
+                    <option>Ipad</option>
+                    <option>Mac</option>
+                    <option>Tv</option>
+                    <option>Music</option>
+                    <option>Watch</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="configuration">Configuration</label>
+                <textarea class="form-control" id="configuration" rows="3" name="configuration"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Image File names</label>
+                <input type="text" class="form-control" id="image" placeholder="Ex: iphone.jpeg" name="image">
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="price" class="form-control" id="price" placeholder="1000" name="price">
+            </div>
+            <div class="form-group">
+                <label for="stock">Stock</label>
+                <input type="stock" class="form-control" id="stock" placeholder="300" name="stock">
+            </div>
+        </form>
+        <div class="text-center">
+            <button class="btn btn-dark" id="addBtn" type="submit" name="submit">
+                <i class="fas fa-plus"></i>
+                <span class="d-none d-sm-inline-block">&nbspAdd product</span>
+            </button>
+            &nbsp<button class="btn btn-dark" id="cancelBtn" name="cancel">
+                <i class="fas fa-arrow-left"></i>
+                <span class="d-none d-sm-inline-block">&nbspBack to products</span></button>
+        </div>
+    </div>
+    <div id="error"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

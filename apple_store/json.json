@@ -1,0 +1,189 @@
+{
+    "products":{
+        "0": {
+            "name": "Apple iPhone X, 64GB, 4G, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/8892/8891494/images/res_d7d63673fac35dac5f93604c4a7bd059_450x450_5t3l.jpg",
+            "configuration": "Viziunea noastra a fost dintotdeauna crearea unui iPhone cu ecran pe toata suprafata. Unul atat de captivant, incat dispozitivul in sine sa se piarda cu totul in experienta utilizarii. Si atat de inteligent incat sa raspunda la o atingere, la vocea ta si chiar la o privire. Cu iPhone X, acea viziune este acum realitate. Priveste direct in viitor.",
+            "price": 4.249,
+            "stock": 300,
+            "category": "phones"
+        },
+        "1": {
+            "name": "Apple iPhone 7, 32GB, Black",
+            "image": "https://s12emagst.akamaized.net/products/4159/4158442/images/res_bbdfaa9537747e2cd6dd46a657f9107b_450x450_q4h3.jpg",
+            "configuration": "iPhone 7 imbunatateste substantial cele mai importante aspecte care definesc experienta iPhone. Iti ofera noi sisteme avansate pentru camere. Cele mai bune performante si cea mai extinsa autonomie din toate timpurile pentru iPhone. Difuzoare stereo captivante. Cea mai mare luminozitate si cea mai bogata gama cromatica pentru un afisaj de iPhone. Rezistenta la stropire si apa. Un design pe masura performantelor. Acesta este iPhone 7.",
+            "price": 2.199,
+            "stock": 400,
+            "category": "phones"
+        },
+        "2": {
+            "name": "Apple iPhone 6s, 32GB, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/4159/4158442/images/res_bbdfaa9537747e2cd6dd46a657f9107b_450x450_q4h3.jpg",
+            "configuration": "De cand incepi sa folosesti iPhone 6s, simti ca experimentezi ceva cu totul nou. Cu o simpla apasare, 3D Touch iti permite sa faci mai multe ca niciodata. Live Photos da viata amintirilor intr-un mod incredibil de realist. Si acesta e doar inceputul. Daca-l analizezi in profunzime, iPhone 6s inoveaza la fiecare nivel.",
+            "price": 1.599,
+            "stock": 200,
+            "category": "phones"
+        },
+        "3": {
+            "name": "Apple iPhone XS Max, 64GB, Gold",
+            "image": "https://s12emagst.akamaized.net/products/17043/17042936/images/res_b7d72e6da14bd46eaa5cbcd585d08ec2_450x450_hhed.jpg",
+            "configuration": "Super Retina in doua dimensiuni - inclusiv cel mai mare ecran vazut vreodata la un iPhone. Face ID si mai rapid. Cel mai inteligent si mai puternic cip intalnit la un smartphone. Si un sistem revolutionar de camere duale cu Controlul adancimii de camp. iPhone XS Max reprezinta tot ceea ce iubesti la iPhone. Acum, la un nivel extrem.",
+            "price": 5.599,
+            "stock": 200,
+            "category": "phones"
+        },
+        "4": {
+            "name": "Apple iPhone XR, 64GB, Black",
+            "image": "https://s12emagst.akamaized.net/products/17043/17042909/images/res_beeb2a5b938cd2fc51ad063da79f4321_450x450_ckv0.jpg",
+            "configuration": "Telefon mobil Apple iPhone XR, 64GB, Black Ecran Liquid Retina complet nou , cel mai avansat LCD din domeniu. Face ID si mai rapid. Cel mai inteligent si mai puternic cip intalnit la un smartphone. Si un sistem revolutionar de camere. iPhone XR. Este superb oricum l-ai privi. Iti prezentam Liquid Retina.",
+            "price": 3.649,
+            "stock": 200,
+            "category": "phones"
+
+        },
+        "5": {
+            "name": "Apple iPhone 5S, 16GB, Gold",
+            "image": "https://s12emagst.akamaized.net/products/17043/17042909/images/res_beeb2a5b938cd2fc51ad063da79f4321_450x450_ckv0.jpg",
+            "configuration": "iPhone 5S este proiectat pana la cele mai mici detalii cu o meticulozitate si o precizie specifica Apple. Nu este doar un produs care demonstreaza de ce e capabila tehnologia. Este ceva ce e util din punct de vedere tehnologic. Nu este doar ceea ce urmeaza, ci si ceea ce ar trebui sa urmeze",
+            "price": 979,
+            "stock": 200,
+            "category": "phones"
+        },
+        "6": {
+            "name": "Apple iPad Air 3, 10.5'', 64GB, Wi-Fi, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/21007/21006481/images/res_e6faa5b43c4f4e397510e1da4498d748_450x450_v1hc.jpg",
+            "configuration": "iPad Air are un display Retina de 10.5 inch, ramanand extrem de portabila si perfecta oriunde. Este subtire, usoara si ofera o conexiune wireless avansata. Si cu pana la 10 ore de viata a bateriei, iPad Air poate functiona toata ziua intr-o singura incarcare.",
+            "price": 2649,
+            "stock": 200,
+            "category": "ipad"
+        },
+        "7": {
+            "name": "Apple iPad Pro (2018), 11'', 64GB, Wi-Fi, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/18296/18295783/images/res_4c7e1e049770daa18084009bed0d7ef7_450x450_eqc5.jpg",
+            "configuration": "Apple Inc, cunoscuta anterior sub numele de Apple Computers, este o companie americana cu domeniul de activitate axat pe tehnologia computerelor. Apple a castigat o mare reputatie ca inovator in industria de inalta tehnologie. Compania Apple a fost infiintata de Steve Jobs si Gary Wozniak la data de 1 aprilie 1976 intr-un garaj inchiriat din Palo Alto, in sudul Californiei. In iulie ‘76 Apple Computer scotea pe piata primul PC in forma lui incipienta.",
+            "price": 3989,
+            "stock": 200,
+            "category": "ipad"
+        },
+        "8": {
+            "name": "Apple iPad mini 5, 64GB, Wi-Fi, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/21007/21006475/images/res_f4f0e14ac5c528a5a9ec01090714ba53_450x450_sr2j.jpg",
+            "configuration": "iPad mini are un design subtire, este usor si portabil, ceea ce il face sa fie partenerul perfect atunci cand sunteti in miscare. Avand o grosime de doar 6.1 mm, este usor sa o luati cu dvs. intr-o mana sau sa o scoateti dintr-un buzunar sau geanta ori de cate ori va simtiti inspirati.",
+            "price": 2149,
+            "stock": 200,
+            "category": "ipad"
+        },
+        "9": {
+            "name": "Apple iPad 9.7'' (2018), 32GB, Wi-Fi, Gold",
+            "image": "https://s12emagst.akamaized.net/products/14401/14400448/images/res_35bb857287d1bfc03d1152058b92f4c3_450x450_rn01.jpg",
+            "configuration": "Acest produs ajunge la tine in cel mai scurt timp de la distribuitori oficiali din toata lumea. Ambalajul este intr-o limba de circulatie mondiala, inclusiv chineza. Se poate folosi liber in orice retea mobila, nefiind codat. Meniul e presetat in limba engleza si are toate limbile internationale. Limba romana e optionala, la alegerea producatorului.",
+            "price": 1649,
+            "stock": 200,
+            "category": "ipad"
+        },
+        "10": {
+            "name": "Laptop Apple MacBook Air 13, ecran Retina, procesor Intel® Core™ i5 1.60 GHz, 8GB RAM, 128GB SSD, Intel UHD Graphics 617, macOS, ROM KB, Gold",
+            "image": "https://s12emagst.akamaized.net/products/18367/18366186/images/res_44a6643a81d13d8ce707a4ab4ebce933_450x450_qahu.jpg",
+            "configuration": "Apple Inc, cunoscuta anterior sub numele de Apple Computers, este o companie americana cu domeniul de activitate axat pe tehnologia computerelor. Apple a castigat o mare reputatie ca inovator in industria de inalta tehnologie. Compania Apple a fost infiintata de Steve Jobs si Gary Wozniak la data de 1 aprilie 1976 intr-un garaj inchiriat din Palo Alto, in sudul Californiei. In iulie ‘76 Apple Computer scotea pe piata primul PC in forma lui incipienta.",
+            "price": 5999,
+            "stock": 200,
+            "category": "mac"
+        },
+        "11": {
+            "name": "Laptop Apple MacBook Pro 13 cu procesor Intel® Dual Core™ i5 2.30GHz, 13.3'', Ecran Retina, 8GB, 128GB SSD, Intel® Iris Plus Graphics 640, macOS Sierra, INT KB, Silver",
+            "image": "https://s12emagst.akamaized.net/products/18367/18366186/images/res_44a6643a81d13d8ce707a4ab4ebce933_450x450_qahu.jpg",
+            "configuration": "Laptop Apple MacBook Pro 13 Noul MacBook Pro (13 inchi) este mai puternic si mai rapid ca niciodata si totusi mult mai subtire si usor. Are cel mai luminos si mai colorat ecran vazut vreodata la un notebook Mac. Si ofera pana la 10 ore de autonomie a bateriei. Este un notebook special conceput pentru lucrurile pe care le faci zilnic. Gata sa te insoteasca oriunde te duce o idee grozava.",
+            "price": 6799,
+            "stock": 200,
+            "category": "mac"
+        },
+        "12": {
+            "name": "Laptop Apple MacBook 12 cu procesor Intel® Dual Core™ M3 1.20GHz, 12'', Ecran Retina, 8GB, 256GB SSD, Intel® HD Graphics 615, macOS Sierra, ROM KB, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/3445/3444906/images/res_88e20ca68a663c2a77108eb6291d703c_450x450_nltq.jpg",
+            "configuration": "Noul MacBook sfideaza imposibilul: ofera o experienta completa, in cel mai usor si mai compact notebook Mac de pana acum. Fiecare element a fost reimaginat, nu doar pentru a fi mai usor si mai subtire, dar si mai bun. Rezultatul e mult mai mult decat un nou notebook. Este viitorul notebookurilor. Iar acum, cu procesoare Intel de generatia a 6-a, performanta imbunatatita a graficii, stocare flash mai rapida si o autonomie a bateriei de pana la 10 ore,* MacBook este si mai capabil.",
+            "price": 6499,
+            "stock": 200,
+            "category": "mac"
+        },
+        "13": {
+            "name": "Laptop Apple MacBook Air 13, ecran Retina, procesor Intel® Core™ i5 1.60 GHz, 8GB RAM, 256GB SSD, Intel UHD Graphics 617, macOS, INT KB, Silver",
+            "image": "https://s12emagst.akamaized.net/products/18367/18366185/images/res_53718680f2eb712ae20ce71562c49b03_450x450_h4cm.jpg",
+            "configuration": "Apple Inc, cunoscuta anterior sub numele de Apple Computers, este o companie americana cu domeniul de activitate axat pe tehnologia computerelor. Apple a castigat o mare reputatie ca inovator in industria de inalta tehnologie. Compania Apple a fost infiintata de Steve Jobs si Gary Wozniak la data de 1 aprilie 1976 intr-un garaj inchiriat din Palo Alto, in sudul Californiei. In iulie ‘76 Apple Computer scotea pe piata primul PC in forma lui incipienta.",
+            "price": 7299,
+            "stock": 200,
+            "category": "mac"
+        },
+        "14": {
+            "name": "Laptop Apple MacBook Air 13, ecran Retina, procesor Intel® Core™ i5 1.60 GHz, 8GB RAM, 128GB SSD, Intel UHD Graphics 617, macOS, ROM KB, Space Grey",
+            "image": "https://s12emagst.akamaized.net/products/18367/18366183/images/res_6c2f1ffad460886dcdc24b8293ebd0e3_450x450_rul9.jpg",
+            "configuration": "Apple Inc, cunoscuta anterior sub numele de Apple Computers, este o companie americana cu domeniul de activitate axat pe tehnologia computerelor. Apple a castigat o mare reputatie ca inovator in industria de inalta tehnologie. Compania Apple a fost infiintata de Steve Jobs si Gary Wozniak la data de 1 aprilie 1976 intr-un garaj inchiriat din Palo Alto, in sudul Californiei. In iulie ‘76 Apple Computer scotea pe piata primul PC in forma lui incipienta.",
+            "price": 5999,
+            "stock": 200,
+            "category": "mac"
+        },
+        "15": {
+            "name": "Laptop Apple MacBook 12 cu procesor Intel® Dual Core™ i5 1.30GHz, Kaby Lake, 12'', Ecran Retina, 8GB, 512GB SSD, Intel® HD Graphics 615, Mac OS Sierra, Gold",
+            "image": "https://s12emagst.akamaized.net/products/18367/18366183/images/res_6c2f1ffad460886dcdc24b8293ebd0e3_450x450_rul9.jpg",
+            "configuration": "Noul MacBook sfideaza imposibilul: ofera o experienta completa, in cel mai usor si mai compact notebook Mac de pana acum. Fiecare element a fost reimaginat, nu doar pentru a fi mai usor si mai subtire, dar si mai bun. Rezultatul e mult mai mult decat un nou notebook. Este viitorul notebookurilor. Tastatura se extinde in mai putin spatiu. O tastatura confortabila, de dimensiuni normale, este esentiala pentru o experienta excelenta de utilizare a unui notebook. Insa pentru ca ea sa se potriveasca cu supletea eleganta a noului Macbook, a trebuit sa regandim felul in care e proiectata si fabricata. Astfel, pentru a crea noua tastatura, am reimaginat fiecare tasta si mecanismul ei de functionare — nu numai ca e mult mai subtire, dar e si mai confortabila, precisa si sensibila. Retina intr-o noua viziune. Din momentul in care deschizi noul MacBook, ecranul sau stralucit Retina de 12 inchi, cu sticla de la un capat la celalalt, aduce totul in prim-plan.",
+            "price": 7399,
+            "stock": 200,
+            "category": "mac"
+        },
+        "16": {
+            "name": "Apple TV 32GB, Wi-Fi, Ethernet, HDMI, micro-USB",
+            "image": "https://s12emagst.akamaized.net/products/2437/2436572/images/res_5f384716670c012b2f11dce7259c141e_450x450_r2rj.jpg",
+            "configuration": "Televizorul este o parte importanta din viata noastra. Ne adunam in jurul lor pentru a viziona spectacole si evenimente importante. Cu toate acestea, cumva, experienta generala de televiziune a continuat sa stagneze. Pana acum. Totul incepe prin a recunoaste ca aplicatiile sunt viitorul televiziunii. HBO NOW, WatchESPN, Netflix, Hulu, iTunes - o multitudine de aplicatii. Deci, am construit o noua fundatie in jurul acesti viziuni - un nou sistem de operare numit tvOS, metode inovatoare de conectare la ecranul tau si o utilizare inteligenta pentru a urmari emisiunile si canalele tale favorite. Acesta este noul Apple TV. O experienta TV nemaiintalnita.",
+            "price": 1031,
+            "stock": 200,
+            "category": "tv"
+        },
+        "17": {
+            "name": "Casti Apple AirPods 2",
+            "image": "https://s12emagst.akamaized.net/products/21114/21113102/images/res_d8de6a2a97c4b9a1aff31aaf186675c7_450x450_p6th.jpg",
+            "configuration": "E si mai multa magie in aer. Acum, cu mai mult timp de convorbire si cu o noua carcasa de incarcare wireless, castile AirPods ofera o experienta de auditie la casca wireless, fara egal. Doar le scoti din cutie si sunt gata sa fie folosite cu toate dispozitivele tale. Pune-le in urechi si se conecteaza imediat, invaluindu-te cu un sunet bogat, de inalta calitate. Ca prin magie.",
+            "price": 1100,
+            "stock": 200,
+            "category": "music"
+        },
+        "18": {
+            "name": "Apple Watch 3, GPS, Carcasa Silver Aluminium 42mm, White Sport Band",
+            "image": "https://s12emagst.akamaized.net/products/17033/17032816/images/res_f594cdcd3cf3f1dda441f7f5797d55ff_450x450_e2tq.jpg",
+            "configuration": "Antrenor personal inteligent. Aplicatie Ritm cardiac imbunatatita. Playlisturile tale favorite la indemana ta. Altimetru incorporat. Iti prezentam Apple Watch Series 3. Acum poti fi mai activ, mai motivat si mai conectat ca oricand.",
+            "price": 1599,
+            "stock": 200,
+            "category": "iwatch"
+        },
+        "19": {
+            "name": "Apple Watch Nike+ 3, GPS, Carcasa Space Grey Aluminium 42mm, Anthracite/Black Nike Sport Band",
+            "image": "https://s12emagst.akamaized.net/products/17033/17032816/images/res_f594cdcd3cf3f1dda441f7f5797d55ff_450x450_e2tq.jpg",
+            "configuration": "Apple Watch Nike+ 3, GPS, Carcasa Space Grey Aluminium 42mm, Anthracite/Black Nike Sport Band.Elibereaza alergatorul din tine. Doua dintre cele mai inovatoare companii din lume au dus si mai departe parteneriatul lor de lunga durata. Apple Watch Nike+ iti permite acum sa masori altitudinea la care te afli, cu ajutorul unui altimetru incorporat, sa vizualizezi mai multe statistici despre alergarile tale si te incurajeaza la fiecare pas. Partenerul perfect de alergare tocmai a devenit si mai grozav.",
+            "price": 1599,
+            "stock": 200,
+            "category": "iwatch"
+        },
+        "20": {
+            "name": "Apple Watch 4, GPS, Carcasa Space Grey Aluminium 40mm, Black Sport Loop",
+            "image": "https://s12emagst.akamaized.net/products/17033/17032824/images/res_91d6e6dad8cc9d901d2f372c4a55fcb5_450x450_q1nn.jpg",
+            "configuration": "Reconceput si reproiectat fundamental. Cel mai mare ecran Apple Watch de pana acum. Senzor cardiac electric. ECG la incheietura mainii. Digital Crown cu feedback haptic. Notificari pentru ritm cardiac scazut sau ridicat si puls neregulat. Detectare cadere si S.O.S. urgente. Cadrane Respiratie. Detectare automata a antrenamentelor. Antrenamente de yoga si drumetii. Functii avansate pentru alergatori precum alerte de cadenta si ritm. Competitii directe. Partajarea activitatii cu prietenii. Coaching personalizat. Provocari lunare si trofee. Poti folosi Walkietalkie, da telefoane si trimite mesaje. Asculta Apple Music si Podcasturi Apple. Apple Watch Series 4 iti permite sa faci totul de la incheietura mainii.",
+            "price": 2199,
+            "stock": 200,
+            "category": "iwatch"
+        },
+        "21": {
+            "name": "Apple Watch 4, GPS, Carcasa Gold Aluminium 40mm, Pink Sand Sport Band",
+            "image": "https://s12emagst.akamaized.net/products/17033/17032824/images/res_91d6e6dad8cc9d901d2f372c4a55fcb5_450x450_q1nn.jpg",
+            "configuration": "Reconceput si reproiectat fundamental. Cel mai mare ecran Apple Watch de pana acum. Senzor cardiac electric. ECG la incheietura mainii. Digital Crown cu feedback haptic. Notificari pentru ritm cardiac scazut sau ridicat si puls neregulat. Detectare cadere si S.O.S. urgente. Cadrane Respiratie. Detectare automata a antrenamentelor. Antrenamente de yoga si drumetii. Functii avansate pentru alergatori precum alerte de cadenta si ritm. Competitii directe. Partajarea activitatii cu prietenii. Coaching personalizat. Provocari lunare si trofee. Poti folosi Walkietalkie, da telefoane si trimite mesaje. Asculta Apple Music si Podcasturi Apple. Apple Watch Series 4 iti permite sa faci totul de la incheietura mainii.",
+            "price": 2309,
+            "stock": 200,
+            "category": "iwatch"
+        },
+        "22": {
+            "name": "Apple Watch Nike+ 4, GPS, Carcasa Space Grey Aluminium 44mm, Black Nike Sport Loop",
+            "image": "https://s12emagst.akamaized.net/products/17033/17032841/images/res_517d988e5977bc9d5a0ea2e04ea4abf5_450x450_pubs.jpg",
+            "configuration": "Apple Watch Nike+ este partenerul perfect pentru alergat cu aplicatia Nike+ Run Club. Dar pentru majoritatea oamenilor, acesta este doar un aspect al antrenamentului lor. De aceea, Nike a creat aplicatia Nike Training Club pentru a-ti permite sa intri intr-o lume cu diferite antrenamente si experti. Impreuna, te vor ajuta sa iti maresti rezistenta si puterea pentru a-ti ridica nivelul de fitness.",
+            "price": 3209,
+            "stock": 200,
+            "category": "iwatch"
+        }
+    }
+}
