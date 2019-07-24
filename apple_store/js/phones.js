@@ -145,7 +145,7 @@ document.querySelector('#searchBtn').addEventListener('click', function () {
     var insertedInput = document.querySelector('#input').value.trim();
     if (insertedInput) {
         for (let id in database) {
-            var arr = database[id].name.toLowerCase().split(/[\s,]+/);
+            var arr = database[id].name.split(/[\s,]+/);
             if (arr.includes(insertedInput)) {
                 foundProducts[id] = database[id];
             }
