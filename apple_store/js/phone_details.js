@@ -79,9 +79,9 @@ function drawDetails() {
     if (cart[firebaseId] && database.stock === cart[firebaseId].quantity){ // daca stocul produsului e egal cu cantitatea din cos
         html += `
         <h4 class="text-danger">You have the item's max quantity in your cart!</h4>
-        <button id="decrement" disabled>-</button>
+        <button id="decrement" class="btn btn-lighter" disabled>-</button>
         <input id="quantity" type="text" value="1" style="background:none; border:none;" disabled>
-        <button id="increment" disabled>+</button><br/><br/>
+        <button id="increment" class="btn btn-lighter" disabled>+</button><br/><br/>
         <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
@@ -89,9 +89,9 @@ function drawDetails() {
         var quantity = document.querySelector("#quantity");
     }else if (database.stock > 0) {
         html += `
-        <button id="decrement">-</button>
+        <button id="decrement" class="btn btn-lighter" style="">-</button>
         <input id="quantity" type="text" value="1" style="background:none;  border:none;" disabled>
-        <button id="increment">+</button><br/><br/>
+        <button id="increment" class="btn btn-lighter">+</button><br/><br/>
         <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
@@ -100,9 +100,9 @@ function drawDetails() {
         html += `
         <h4 class="text-danger">You are exceeding the max quantity of this item's stock!</h4>
         <div class="d-flex d-inline-block justify-content-center mb-2">
-        <button id="decrement">-</button>
+        <button id="decrement" class="btn btn-lighter">-</button>
         <input id="quantity" type="text" placeholder="qty" value="1" style="background:none; border:none;" disabled>
-        <button id="increment" disabled>+</button>
+        <button id="increment" class="btn btn-lighter" disabled>+</button>
         </div>
         <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
@@ -112,9 +112,9 @@ function drawDetails() {
         html += `
         <h4 class="text-danger">Product out of stock!</h4>
         <div class="d-flex d-inline-block justify-content-center mb-2">
-        <button id="decrement" disabled>-</button>
-        <input id="quantity" type="text" placeholder="qty" value="1" style="background:none; border:none;" disabled>
-        <button id="increment" disabled>+</button>
+        <button id="decrement" class="btn btn-lighter text-danger" disabled>-</button>
+        <input id="quantity" type="text" placeholder="qty" value="1" style="background:none; border:none;" class="text-danger" disabled>
+        <button id="increment" class="btn btn-lighter text-danger" disabled>+</button>
         </div>
         <button class="btn btn-dark" data-id="${database.id}" id="addToCart" disabled><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
@@ -178,7 +178,7 @@ function addToCart() {
 function popUp() {
     if (sufficientStock){
         Swal.fire({
-            position: 'top-end',
+            position: 'top-start',
             type: 'success',
             title: `${database.name} added to cart!`,
             showConfirmButton: false,

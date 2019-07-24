@@ -4,7 +4,6 @@ function loader() {
 
 loader();
 initializeCart();
-// syncCart();
 itemCounter();
 
 
@@ -73,18 +72,3 @@ function initializeCart() {
 document.querySelector("#thirdBtn").addEventListener("click", ()=> {
   window.open("phones.html", "_self")
 });
-
-
-
-// function syncCart() {
-//   for (let key in database) {
-//       if (cart[key]) {
-//           cart[key] = {
-//               ...cart[key],
-//               ...database[key]
-//           }
-//       }
-//   }
-//   localStorage.setItem("cart",JSON.stringify(cart));
-// }
-

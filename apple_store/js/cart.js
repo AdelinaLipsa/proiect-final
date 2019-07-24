@@ -3,6 +3,7 @@ let cart;
 let database;
 initializeCart();
 getDatabase();
+syncCart();
 
 //----------------CART INITIALIZATION
 function initializeCart() {
@@ -139,7 +140,7 @@ function drawCart() {
         <p><b>Shipping cost:</b> Free shipping</p>
         <hr>
         <button id="continueBtn" class="btn btn-dark">Continue Shopping</button>
-        <button id="checkoutBtn" class="btn btn-success" onclick="doingTheCheckout();">Checkout</button>
+        <button id="checkoutBtn" class="btn btn-success" onclick="checkingStock();">Checkout</button>
         </div>
         `;
         document.querySelector('.totalSpot').innerHTML = html;
@@ -181,7 +182,6 @@ function increment() {
 
 // ------------DELETE FROM CART
 function remove() {
-
     let id = event.currentTarget.id;
     delete cart[id];
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -227,12 +227,12 @@ function checkingStock() {
                 let html = '<div class="text-center position-fixed p-3 border rounded shadow bg-white screen-center">';
                 for (let key in cart) {
                     if (database[key].stock < 1) {
-                        html += `<p>Product ${cart[key].name} out of stock. Product deleted.</p>`;
+                        html += `<p>We are sorry but product ${cart[key].name} is out of stock. We deleted the product from your cart.</p>`;
                         delete cart[key];
                         modified = true;
                     } else if (cart[key].quantity > database[key].stock) {
                         cart[key].quantity = database[key].stock;
-                        html += `<p>Product ${cart[key].name} quantity modified with the max stock available.</p>`;
+                        html += `<p>${cart[key].name}'s quantity has been modified with the max stock available.</p>`;
                         modified = true;
                     }
                 }
@@ -260,11 +260,6 @@ function checkingStock() {
     }
 }
 
-//------------------------CHECKOUT BUTTON CONDITIONS
-function doingTheCheckout() {
-    checkingStock();
-}
-
 
 function itemCounter(){
     var counter = 0;
@@ -277,3 +272,18 @@ function itemCounter(){
         document.querySelector("#itemCounter").innerHTML ="";
     }
 }
+
+
+function syncCart() {
+    for (let key in database) {
+        if (cart[key]) {
+            cart[key] = {
+                ...cart[key],
+                ...database[key]
+            }
+        }
+    }
+    localStorage.setItem("cart",JSON.stringify(cart));
+  }
+  
+  
