@@ -26,25 +26,6 @@ function loader() {
     document.querySelector(".loader").innerHTML = "<img src='https://cdn.dribbble.com/users/189524/screenshots/2822794/silhouette-solo-loader-dribbble_v2.gif' class='loaderImg'>";
 }
 
-function ajax(url, method, body, callback, callbackError) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4) {
-            if (this.status == 200) {
-                if (typeof callback === "function") {
-                    callback(this.responseText);
-                }
-            } else {
-                if (typeof callbackError === "function") {
-                    callbackError(this.responseText);
-                }
-            }
-        }
-    };
-    xhttp.open(method, url, true);
-    xhttp.send(body);
-}
-
 async function ajaxPromise(url, method, body) {
     return new Promise(function (resolve, reject) {
         var xhttp = new XMLHttpRequest();
