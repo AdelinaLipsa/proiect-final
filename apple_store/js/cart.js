@@ -13,7 +13,7 @@ function initializeCart() {
         cart = {};
 }
 
-async function ajaxPromise(url, method, body) {
+function ajaxPromise(url, method, body) {
     return new Promise(function (resolve, reject) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {

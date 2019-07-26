@@ -26,7 +26,7 @@ function loader() {
     document.querySelector(".loader").innerHTML = "<img src='https://cdn.dribbble.com/users/189524/screenshots/2822794/silhouette-solo-loader-dribbble_v2.gif' class='loaderImg'>";
 }
 
-async function ajaxPromise(url, method, body) {
+function ajaxPromise(url, method, body) {
     return new Promise(function (resolve, reject) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
