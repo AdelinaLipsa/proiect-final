@@ -48,7 +48,7 @@ document.querySelector('#saveBtn').addEventListener('click', function () {
 
         fetch(`https://proiect-final-f676e.firebaseio.com/products/${firebaseId}.json`, {
             method: 'PUT',
-            body: JSON.stringify(newItem)
+            body: newItem
         })
             .then(() => window.open('admin.html', '_self'))
             .catch(err => console.log(err));

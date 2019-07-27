@@ -82,10 +82,13 @@ function drawDetails() {
         <button id="decrement" class="btn btn-lighter" disabled>-</button>
         <input id="quantity" type="text" value="1" style="background:none; border:none;" disabled>
         <button id="increment" class="btn btn-lighter" disabled>+</button><br/><br/>
-        <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back"  class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
         `;
+        $('.carousel').carousel({
+            interval: 2000
+        });
         var quantity = document.querySelector("#quantity");
     }else if (database.stock > 0) {
         html += `
@@ -96,6 +99,9 @@ function drawDetails() {
         </div>
         </div>
      `;
+     $('.carousel').carousel({
+        interval: 2000
+    });
     } else if (quantity > database.stock) {
         html += `
         <h4 class="text-danger">You are exceeding the max quantity of this item's stock!</h4>
@@ -108,6 +114,9 @@ function drawDetails() {
         </div>
         </div>
         `;
+        $('.carousel').carousel({
+            interval: 2000
+        });
     } else //daca stocul la produs e 0
         html += `
         <h4 class="text-danger">Product out of stock!</h4>
@@ -121,6 +130,9 @@ function drawDetails() {
         </div>
         </div>
         `;
+        $('.carousel').carousel({
+            interval: 2000
+        });
     document.querySelector("#content").innerHTML = html;
 
     document.querySelector("#decrement").addEventListener("click", () => {
@@ -132,7 +144,9 @@ function drawDetails() {
     document.querySelector("#increment").addEventListener("click", () => {
         var value = parseInt(document.getElementById('quantity').value, 10);
         value = isNaN(value) ? 0 : value;
+        if(value<database.stock){
         value++;
+        }
         document.getElementById('quantity').value = value;
     });
 
