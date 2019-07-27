@@ -123,10 +123,10 @@ function syncCart() {
 
 document.querySelector('#searchBtn').addEventListener('click', function () {
     var foundProducts = {};
-    var insertedInput = document.querySelector('#input').value.trim();
+    var insertedInput = document.querySelector('#input').value.trim().toLowerCase();
     if (insertedInput) {
         for (let id in database) {
-            var arr = database[id].name.split(/[\s,]+/);
+            var arr = database[id].name.toLowerCase().split(/[\s,]+/);
             if (arr.includes(insertedInput)) {
                 foundProducts[id] = database[id];
             }

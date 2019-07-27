@@ -66,9 +66,7 @@ function initializeCart() {
 
   document.querySelector(".loader").innerHTML = "";
   document.querySelector(".loader").style.display = "none";
-  document.querySelector("#boxSlider").addEventListener("click",()=>{
-    window.open("phones.html", "_self")
-  });
+
 document.querySelector("#thirdBtn").addEventListener("click", ()=> {
   window.open("phones.html", "_self")
 });
