@@ -82,7 +82,7 @@ function drawDetails() {
         <button id="decrement" class="btn btn-lighter" disabled>-</button>
         <input id="quantity" type="text" value="1" style="background:none; border:none;" disabled>
         <button id="increment" class="btn btn-lighter" disabled>+</button><br/><br/>
-        <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back"  class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back"  class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
         `;
@@ -95,7 +95,7 @@ function drawDetails() {
         <button id="decrement" class="btn btn-lighter" style="">-</button>
         <input id="quantity" type="text" value="1" style="background:none;  border:none;" disabled>
         <button id="increment" class="btn btn-lighter">+</button><br/><br/>
-        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
      `;
@@ -110,7 +110,7 @@ function drawDetails() {
         <input id="quantity" type="text" placeholder="qty" value="1" style="background:none; border:none;" disabled>
         <button id="increment" class="btn btn-lighter" disabled>+</button>
         </div>
-        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
         `;
@@ -125,7 +125,7 @@ function drawDetails() {
         <input id="quantity" type="text" placeholder="qty" value="1" style="background:none; border:none;" class="text-danger" disabled>
         <button id="increment" class="btn btn-lighter text-danger" disabled>+</button>
         </div>
-        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" disabled><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html"><button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" disabled><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
         </div>
         </div>
         </div>

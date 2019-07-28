@@ -100,7 +100,7 @@ function drawCart() {
            </td>
            <td class="align-middle">${subtotal.toFixed(2)} lei</td>
            <td class="align-middle">
-           <button id = "${key}" class="text-nowrap" onclick="remove();"><span class="d-none d-sm-inline">Remove</span><i class="fas fa-trash-alt"></i>
+           <button id = "${key}" class="text-nowrap btn btn-dark" onclick="remove();"><span class="d-none d-sm-inline">Remove</span><i class="fas fa-trash-alt"></i>
            </button>
            </td>
            </tr> 
