@@ -40,7 +40,7 @@ document.querySelector(".loader").style.display = "none";
 
 function drawDetails() {
     let arr = database.image.split(" ");
-    var html= `
+    var html = `
     <div class="col-sm-10 d-flex pt-5">
     <div class="col-6  d-none d-sm-inline">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -76,7 +76,7 @@ function drawDetails() {
     <p class="lead"><b>Price:</b>&nbsp${database.price} lei</p>
     <p class="lead"><b>Stock:</b>&nbsp${(database.stock<=0)?0:database.stock} buc.</p>
     `;
-    if (cart[firebaseId] && database.stock === cart[firebaseId].quantity){ // daca stocul produsului e egal cu cantitatea din cos
+    if (cart[firebaseId] && database.stock === cart[firebaseId].quantity) { // daca stocul produsului e egal cu cantitatea din cos
         html += `
         <h4 class="text-danger">You have the item's max quantity in your cart!</h4>
         <button id="decrement" class="btn btn-lighter" disabled>-</button>
@@ -90,7 +90,7 @@ function drawDetails() {
             interval: 2000
         });
         var quantity = document.querySelector("#quantity");
-    }else if (database.stock > 0) {
+    } else if (database.stock > 0) {
         html += `
         <button id="decrement" class="btn btn-lighter" style="">-</button>
         <input id="quantity" type="text" value="1" style="background:none;  border:none;" disabled>
@@ -99,9 +99,9 @@ function drawDetails() {
         </div>
         </div>
      `;
-     $('.carousel').carousel({
-        interval: 2000
-    });
+        $('.carousel').carousel({
+            interval: 2000
+        });
     } else if (quantity > database.stock) {
         html += `
         <h4 class="text-danger">You are exceeding the max quantity of this item's stock!</h4>
@@ -130,9 +130,9 @@ function drawDetails() {
         </div>
         </div>
         `;
-        $('.carousel').carousel({
-            interval: 2000
-        });
+    $('.carousel').carousel({
+        interval: 2000
+    });
     document.querySelector("#content").innerHTML = html;
 
     document.querySelector("#decrement").addEventListener("click", () => {
@@ -144,9 +144,17 @@ function drawDetails() {
     document.querySelector("#increment").addEventListener("click", () => {
         var value = parseInt(document.getElementById('quantity').value, 10);
         value = isNaN(value) ? 0 : value;
-        if(value<database.stock){
-        value++;
+        if ((cart[firebaseId].quantity + value) < database.stock) {
+            value++;
+        } else if (value === database.stock) {
+            Swal.fire({
+                position: 'center',
+                type: 'error',
+                title: 'This is the max stock available',
+                showConfirmButton: true,
+            })
         }
+
         document.getElementById('quantity').value = value;
     });
 
@@ -178,7 +186,7 @@ function addToCart() {
             cart[firebaseId] = database;
         }
         localStorage.setItem("cart", JSON.stringify(cart));
-    } else  {
+    } else {
         Swal.fire({
             type: 'error',
             title: 'Max quantity exceeded.',
@@ -186,11 +194,11 @@ function addToCart() {
         })
         sufficientStock = false;
     }
-    itemCounter(); 
+    itemCounter();
 }
 
 function popUp() {
-    if (sufficientStock){
+    if (sufficientStock) {
         Swal.fire({
             position: 'top-start',
             type: 'success',
@@ -211,7 +219,6 @@ function addListeners() {
     document.querySelector('#addToCart').addEventListener('click', function () {
         addToCart();
         popUp();
-        document.querySelector('#quantity').value = 1;
         drawDetails();
         addListeners();
     });
@@ -225,15 +232,15 @@ function initializeCart() {
         cart = {};
 }
 
-function itemCounter(){
+function itemCounter() {
     var counter = 0;
-    if(Object.keys(cart).length >0){
-        for(let key in cart){
+    if (Object.keys(cart).length > 0) {
+        for (let key in cart) {
             counter += cart[key].quantity;
         }
-        document.querySelector("#itemCounter").innerHTML= counter;
+        document.querySelector("#itemCounter").innerHTML = counter;
     } else {
-        document.querySelector("#itemCounter").innerHTML ="";
+        document.querySelector("#itemCounter").innerHTML = "";
     }
 }
 
@@ -246,5 +253,5 @@ function syncCart() {
             }
         }
     }
-    localStorage.setItem("cart",JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
