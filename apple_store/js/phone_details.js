@@ -146,7 +146,6 @@ function drawDetails() {
         value = isNaN(value) ? 0 : value;
         if ((cart[firebaseId].quantity + value) < database.stock) {
             value++;
-        } else if (value === database.stock) {
             Swal.fire({
                 position: 'center',
                 type: 'error',
