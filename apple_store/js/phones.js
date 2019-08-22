@@ -69,8 +69,8 @@ function draw(database) {
         var arr = database[id].image.split(" ");
 
         html += `
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div class="card h-100">
+                <div class="col-12 col-md-6 col-lg-4 p-5">
+                    <div class="card h-100" id="background-shadow">
                         <img class="card-img-top img-fluid w-75 mx-auto" src="../imagini/${arr[0]}">
                         
                         <div class="card-body text-center d-flex flex-column">

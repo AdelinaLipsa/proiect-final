@@ -41,8 +41,8 @@ document.querySelector(".loader").style.display = "none";
 function drawDetails() {
     let arr = database.image.split(" ");
     var html = `
-    <div class="col-sm-10 d-flex pt-5">
-    <div class="col-6  d-none d-sm-inline">
+    <div class="col-sm-10 pt-5 d-xl-flex d-md-flex">
+    <div class="col-xl-6 col-md-6 col-12">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -70,9 +70,9 @@ function drawDetails() {
     </a>
   </div>    
   </div>
-    <div class="col-sm-6 d-flex-inline text-center">
+    <div class="col-12 col-xl-6 col-md-6 text-center">
     <h3>${database.name.toUpperCase()}</h3><br/>
-    <p class="text-justify lead"><b>Description:</b>&nbsp${database.configuration}</p>
+    <p class="text-justify lead text-center"><b>Description:</b>&nbsp${database.configuration}</p>
     <p class="lead"><b>Price:</b>&nbsp${database.price} lei</p>
     <p class="lead"><b>Stock:</b>&nbsp${(database.stock<=0)?0:database.stock} buc.</p>
     `;
@@ -82,7 +82,7 @@ function drawDetails() {
         <button id="decrement" class="btn btn-lighter" disabled>-</button>
         <input id="quantity" type="text" value="1" style="background:none; border:none;" disabled>
         <button id="increment" class="btn btn-lighter" disabled>+</button><br/><br/>
-        <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back"  class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" disabled id="addToCart"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back"  class="btn btn-dark"><i class="fas fa-undo"></i>&nbspBack to products</button></a>
         </div>
         </div>
         `;
@@ -92,7 +92,7 @@ function drawDetails() {
         <button id="decrement" class="btn btn-lighter" style="">-</button>
         <input id="quantity" type="text" value="1" style="background:none;  border:none;" disabled>
         <button id="increment" class="btn btn-lighter">+</button><br/><br/>
-        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>Back to products</button></a>
+        <button class="btn btn-dark" data-id="${database.id}" id="addToCart" class="btn btn-dark"><i class="fas fa-shopping-cart"></i>&nbspAdd to cart</button><a href="./phones.html">&nbsp<button id="back" class="btn btn-dark"><i class="fas fa-undo"></i>&nbspBack to products</button></a>
         </div>
         </div>
      `;
