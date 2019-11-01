@@ -66,9 +66,15 @@
   margin-left: 31.5vw;
 }
 
+@media screen and (min-width: 1300px) {
+  #logo {
+    margin-left: 7.5vw;
+  }
+}
+
 @media screen and (min-width: 1900px) {
   #logo {
-    margin-left: 27.5vw;
+    margin-left: 27vw;
   }
 }
 
@@ -170,6 +176,12 @@ form > div > div > input[type="text"]:valid {
   }
 }
 
+@media screen and (min-width: 1300px) {
+  #contact-section {
+    width: 200px;
+  }
+}
+
 #icons-section {
   float: left;
   text-align: left;
@@ -197,6 +209,13 @@ form > div > div > input[type="text"]:valid {
     text-align: left;
     width: 4vw;
     margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #icons-section {
+    margin-left: -34vw;
+    margin-top: 3vh;
   }
 }
 
@@ -237,6 +256,13 @@ div#icons-section > div > i {
     width: 5vw;
     padding: 5px;
     margin-left: 20vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  div#icons-section > div > i {
+    width: 5vw;
+    padding: 10px;
   }
 }
 
@@ -281,6 +307,15 @@ div#icons-section > div > i {
     margin-left: 23vw;
     margin-top: 12vh;
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #text-float {
+    width: 40vw;
+    margin-top: 5vh;
+    padding: 10px;
+    margin-left: -7vw;
   }
 }
 
@@ -369,6 +404,13 @@ div#icons-section > div > i {
   .life-savers {
     margin-top: 3vh;
     margin-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .life-savers {
+    margin-top: 10vh;
+    margin-left: 8vw;
   }
 }
 
