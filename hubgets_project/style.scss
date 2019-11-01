@@ -2,7 +2,7 @@ $color: #0EA5DA;
 $break-small: 425px;
 $break-medium: 700px;
 $break-large: 1024px;
-$break-large-laptop:1440px;
+$break-large-laptop:1300px;
 $break-xlarge:1900px;
 $font1: "Raleway",
 sans-serif;
@@ -69,8 +69,12 @@ $font3: "Lato";
   padding: 35px;
   border-bottom: none;
   margin-left: 31.5vw;
-  @media screen and (min-width: $break-xlarge) {
-    margin-left: 27.5vw;
+
+  @media screen and (min-width: $break-large-laptop){
+    margin-left: 7.5vw;
+  }
+  @media screen and (min-width: $break-xlarge){
+    margin-left: 27vw;
   }
 }
 
@@ -160,6 +164,9 @@ form {
     margin-left: 22.5vw;
     height: 510px;
   }
+  @media screen and (min-width: $break-large-laptop){
+    width: 200px;; 
+  }
 }
 
 #icons-section {
@@ -184,12 +191,14 @@ form {
     width: 4vw;
     margin-top: 10vh;
   }
+  @media screen and (min-width: $break-large-laptop) {
+    margin-left: -34vw;
+    margin-top: 3vh;
+  }
   @media screen and (min-width: $break-xlarge) {
     margin-left: -25vw;
     margin-top: 3vh;
-
   }
-
 }
 
 div#icons-section>div>i {
@@ -217,6 +226,11 @@ div#icons-section>div>i {
     width: 5vw;
     padding: 5px;
     margin-left: 20vw;
+  }
+
+  @media screen and (min-width: $break-large-laptop) {
+    width: 5vw;
+    padding:10px;
   }
   @media screen and (min-width: $break-xlarge) {
     width: 3vw;
@@ -252,6 +266,13 @@ div#icons-section>div>i {
     margin-left: 23vw;
     margin-top: 12vh;
     font-size: 15px;
+  }
+
+  @media screen and (min-width: $break-large-laptop) {
+    width: 40vw;
+    margin-top: 5vh;
+    padding: 10px;
+    margin-left: -7vw;
   }
   @media screen and (min-width: $break-xlarge) {
     width: 20vw;
@@ -316,6 +337,11 @@ div#icons-section>div>i {
   @media screen and (min-width: $break-large) {
     margin-top: 3vh;
     margin-left: 10vw;
+  }
+
+  @media screen and (min-width: $break-large-laptop) {
+    margin-top: 10vh;
+    margin-left: 8vw;
   }
   @media screen and (min-width: $break-xlarge) {
     margin-top: 5vh;
