@@ -86,9 +86,6 @@ function drawDetails() {
         </div>
         </div>
         `;
-        $('.carousel').carousel({
-            interval: 2000
-        });
         var quantity = document.querySelector("#quantity");
     } else if (database.stock > 0) {
         html += `
@@ -99,9 +96,6 @@ function drawDetails() {
         </div>
         </div>
      `;
-        $('.carousel').carousel({
-            interval: 2000
-        });
     } else if (quantity > database.stock) {
         html += `
         <h4 class="text-danger">You are exceeding the max quantity of this item's stock!</h4>
@@ -114,9 +108,7 @@ function drawDetails() {
         </div>
         </div>
         `;
-        $('.carousel').carousel({
-            interval: 2000
-        });
+
     } else //daca stocul la produs e 0
         html += `
         <h4 class="text-danger">Product out of stock!</h4>
@@ -130,9 +122,6 @@ function drawDetails() {
         </div>
         </div>
         `;
-    $('.carousel').carousel({
-        interval: 2000
-    });
     document.querySelector("#content").innerHTML = html;
 
     document.querySelector("#decrement").addEventListener("click", () => {
@@ -143,15 +132,12 @@ function drawDetails() {
 
     document.querySelector("#increment").addEventListener("click", () => {
         var value = parseInt(document.getElementById('quantity').value, 10);
-        value = isNaN(value) ? 0 : value;
-        if ((cart[firebaseId].quantity + value) < database.stock) {
+        if (sufficientStock) {
+            if (value < database.stock - cart[firebaseId].quantity) {
+                value++;
+            }
+        } else if (value < database.stock) {
             value++;
-            Swal.fire({
-                position: 'center',
-                type: 'error',
-                title: 'This is the max stock available',
-                showConfirmButton: true,
-            })
         }
 
         document.getElementById('quantity').value = value;
@@ -186,12 +172,12 @@ function addToCart() {
         }
         localStorage.setItem("cart", JSON.stringify(cart));
     } else {
+        sufficientStock = false;
         Swal.fire({
             type: 'error',
             title: 'Max quantity exceeded.',
             text: 'You are exceeding the max quantity of this item\'s stock!',
         })
-        sufficientStock = false;
     }
     itemCounter();
 }
