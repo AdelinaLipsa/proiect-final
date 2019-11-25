@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Neutrif Pro Bold;
+  src: url("./fonts/neutrifpro-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: Neutrif Pro Light;
+  src: url("./fonts/neutrifpro-light-webfont.ttf");
+}
+
+@font-face {
+  font-family: Hello Stockholm Alt;
+  src: url("./fonts/HelloStockholm-Alt.ttf");
+}
+
+.bounceInDown {
+  font-family: Hello Stockholm Alt;
+  font-size: 6em;
+  z-index: 9999999;
+  text-align: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 13vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: black;
+  font-family: Neutrif Pro Light;
+  font-size: 3em;
+  padding: 10px;
+}
+
+#vertical-text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=style.css.map */
