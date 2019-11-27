@@ -9,42 +9,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css"
         href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.extensions.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
     <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div>
-        <video autoplay muted loop id="myVideo" class="animated fadeIn delay-1s">
-            <source src="./videos/video.mp4" type="video/mp4">
-        </video>
-        <input id="hamburger" class="hamburger" type="checkbox" />
-        <label class="hamburger" for="hamburger">
-            <i></i>
-            <text>
-                <close>close</close>
-                <open>menu</open>
-            </text>
-        </label>
-        <section class="drawer-list">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="sidenav">
-        <div class="image">
-            <img src="./pictures/ssss.jpg" alt="" width="250" height="250" class="animated fadeIn delay-3s" />
-        </div>
-        <h1 class="animated bounceInDown delay-2s slow" id="text">Adelina</h1>
+    <div id="fullpage">
+        <div class="section">
+            <video autoplay data-keepplaying muted loop id="myVideo" class="animated fadeIn delay-1s">
+                <source src="./videos/video.mp4" type="video/mp4">
+            </video>
+            <div class="animated fadeIn delay-2s">
+                <input id="hamburger" class="hamburger" type="checkbox" />
+                <label class="hamburger" for="hamburger">
+                    <i></i>
+                    <text>
+                        <close>close</close>
+                        <open>menu</open>
+                    </text>
+                </label>
+                <section class="drawer-list">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">What I can do</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="image">
+                <img src="./pictures/ssss.jpg" alt="" width="250" height="250" class="animated fadeIn delay-3s" />
+                <h2 class="animated bounceInDown delay-2s slow" id="text">Adelina</h2>
+                <div>
+                    <h1 class="animated fadeIn"></h1>
+                </div>
+            </div>
 
-        <!-- <div id="vertical-text" class="animated fadeInLeft delay-3s">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div> -->
+        </div>
+        <div class="section">
+            <img src="./pictures/turned-on-black-iphone-7-displaying-hello-1275929.jpg" class="secondScreen">
+            <h3>About me</h3>
+            <p>I am enthusiastic about designing and developing a friendly user interface. I am always learning new
+                concepts and ideas to stay up to date with technology. My primary goal is to expand my front-end web
+                developer skills and construct innovative websites using my acquired developer skills to integrate my
+                creativity. </p>
+        </div>
     </div>
 </body>
 

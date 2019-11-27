@@ -1,3 +1,31 @@
+h1 {
+  font-family: Brilliant Regular;
+  font-size: 10em;
+  color: black;
+  z-index: 9999999;
+  margin-left: 9em;
+  margin-top: 3em;
+  text-align: center;
+}
+
+span {
+  border-right: .05em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @font-face {
   font-family: Neutrif Pro Bold;
   src: url("./fonts/neutrifpro-bold-webfont.ttf");
@@ -15,57 +43,40 @@
 
 .bounceInDown {
   font-family: Brilliant Regular;
-  font-size: 3em;
+  font-size: 4em;
   z-index: 1;
   text-align: center;
   position: fixed;
   color: white;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-  margin-left: 1.5em;
+  margin-left: 0.8em;
+  margin-top: -3em;
 }
 
 .image {
   position: fixed;
-  margin-left: 5px;
+  margin-left: 5em;
+  margin-top: -3em;
 }
 
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
-  max-width: 100%;
-  max-height: 100%;
+  left: 0;
   min-height: 100%;
   max-width: 100%;
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
 }
 
-.sidenav {
-  height: 100%;
-  width: 16em;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  padding-top: 20px;
-  background-color: white;
+.secondScreen {
+  min-width: 10vw;
+  max-height: 100em;
 }
 
-.sidenav a {
-  text-decoration: none;
-  color: black;
-  font-family: Neutrif Pro Light;
-  font-size: 3em;
-  padding: 15px;
-}
-
-#vertical-text {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15em;
+h1 {
+  font-family: Brilliant Regular;
+  font-size: 4em;
 }
 
 ul {
@@ -75,6 +86,7 @@ ul {
 }
 
 .drawer-list {
+  font-family: Neutrif Pro Bold;
   position: fixed;
   right: 0;
   top: 0;
@@ -93,8 +105,8 @@ ul {
   transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
   transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease, -webkit-transform 450ms ease;
   border-bottom-left-radius: 100vw;
-  background-color: #d6d6d6;
-  background-color: rgba(204, 204, 204, 0.8);
+  background-color: #858585;
+  background-color: rgba(103, 103, 103, 0.8);
 }
 
 @media (min-width: 768px) {
@@ -120,6 +132,7 @@ ul {
   white-space: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 1em;
   -webkit-transform: translatex(100vw);
           transform: translatex(100vw);
   /* ie workaround */
@@ -148,8 +161,8 @@ ul {
 
 .drawer-list li a:hover {
   cursor: pointer;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: silver;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 input.hamburger {
@@ -588,7 +601,7 @@ label.hamburger text open {
 label.hamburger > i {
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 6px;
   top: 50%;
   background-color: white;
   pointer-events: auto;
@@ -602,7 +615,7 @@ label.hamburger > i:before, label.hamburger > i:after {
   position: absolute;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 6px;
   left: 50%;
   background-color: white;
   content: "";
@@ -626,7 +639,7 @@ label.hamburger > i:after {
 
 label.hamburger {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 25px;
+  right: 35px;
 }
 /*# sourceMappingURL=style.css.map */
