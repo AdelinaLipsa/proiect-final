@@ -1,7 +1,7 @@
 // TYPING EFFECT SCRIPT ------------------------------->
 document.addEventListener('DOMContentLoaded', function (event) {
   // array with texts to type in typewriter
-  var dataText = ["Hello there! My name is Adelina. :)", "Thank you for visiting my page.", "I am a Front End Developer."]; // type one text in the typwriter
+  var dataText = ["Hello there! My name is Adelina.", "Thank you for visiting my page.", "I am a Front End Developer."]; // type one text in the typwriter
   // keeps calling itself until the text is finished
 
   function typeWriter(text, i, fnCallback) {
