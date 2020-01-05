@@ -12,6 +12,7 @@ $(document).ready(function () {
   let currentTool = "paintBrush";
 
   let oldFillColor;
+  let modalError = $(".modal-error");
 
   let width = 30;
   let height = 30;
@@ -173,6 +174,7 @@ $(document).ready(function () {
       //paints the clicked cell
       case "paintBrush":
         highlightSquares(clickedCell);
+        
         break;
         //paints the current cell and the surrounding cells if they are the same color
       case "paintBucket":
@@ -260,6 +262,10 @@ $(document).ready(function () {
     }
   }
 
+  function removeCurrentTool(){
+    $('img').removeClass('tool-selected');
+  }
+
   //gets the color of the given cell
   function eyeDropper(clickedCell) {
     let tempColor = clickedCell.css('background-color');
@@ -303,14 +309,18 @@ $(document).ready(function () {
 
   // image saving 
   $('.foo').click(function () {
-    html2canvas($('#my-node'), {
-      onrendered: function (canvas) {
-        var a = document.createElement('a');
-        a.href = canvas.toDataURL("image/png");
-        a.download = 'image.png';
-        a.click();
-      }
-    });
+    if (canvas.children().length > 0) {
+      html2canvas($('#my-node'), {
+        onrendered: function (canvas) {
+          var a = document.createElement('a');
+          a.href = canvas.toDataURL("image/png");
+          a.download = 'image.png';
+          a.click();
+        }
+      });
+      modalError.addClass("hidden");
+    } else
+      modalError.removeClass("hidden");
   });
 
 
@@ -338,5 +348,8 @@ $(document).ready(function () {
     });
   });
 
+  $('.modal-cancel').click(function() {
+    modalError.fadeOut(500);
+  });
 
 });
