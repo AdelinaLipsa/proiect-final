@@ -163,11 +163,11 @@ form {
   border-radius: 5px;
   color: var(--accent-color);
   display: grid;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
-  height: 80px;
+  height: 92px;
   letter-spacing: 3.5px;
-  line-height: 2.8rem;
+  line-height: 3.8rem;
   margin: 18px 0px 3rem;
   padding: 10px 10px 9px 12px;
   text-transform: uppercase;
