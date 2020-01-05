@@ -1,3 +1,3 @@
 - [Hubgets](https://AdelinaLipsa.github.io/proiect-final/hubgets_project/index.html)
 - [Apple Store](https://AdelinaLipsa.github.io/proiect-final/apple_store/pages/index.html)
-- [Pixel Art Maker](https://AdelinaLipsa.github.io/proiect-final/pixel_art_maker/index.pug)
+- [Pixel Art Maker](https://AdelinaLipsa.github.io/proiect-final/pixel_art_maker/index.html)
