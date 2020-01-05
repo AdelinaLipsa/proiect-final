@@ -73,7 +73,9 @@ html {
 }
 .art-board {
 position: absolute;
-margin-left: 40%;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
 }
 
 h3 {
@@ -93,7 +95,6 @@ td {
 table {
   align-self: center;
   border-collapse: collapse;
-  margin: 0 auto;
 }
 
 tr {
@@ -265,7 +266,7 @@ img {
   height: 40px;
   border-radius: 10px;
   margin: 5px;
-  fill: var(--ui-light);
+  padding: 5px;
 }
 
 img:hover {
