@@ -47,20 +47,20 @@ html {
   min-height: 100vh;
   transition: all .5s ease;
   width: 250px;
-  position:absolute;
+  position: absolute;
 }
 
-#right-sidebar{
+#right-sidebar {
   background: var(--ui-dark);
-  min-height: 100vh;
+  min-height: 105.1vh;
   width: 250px;
-  position:absolute;
-  right:0;
-  color:var(--ui-lightest);
+  position: absolute;
+  right: 0;
+  color: var(--ui-lightest);
 }
 
-#remove-grid{
-  width:150px;
+#remove-grid {
+  width: 150px;
 }
 
 @media only screen and (max-width:700px) {
@@ -80,11 +80,12 @@ html {
     position: absolute;
   }
 }
+
 .art-board {
-position: absolute;
-transform: translate(-50%, -50%);
-top: 50%;
-left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 h3 {
@@ -149,8 +150,9 @@ form {
   height: 30px;
   justify-content: center;
   width: 30px;
-  right:30px;
+  right: 30px;
   margin-left: 150px;
+  margin-top: 20px;
 }
 
 .logo-plus .plus {
@@ -159,7 +161,7 @@ form {
   -moz-animation: plus-opacity 2s infinite ease-in-out;
   -o-animation: plus-opacity 2s infinite ease-in-out;
   -webkit-animation: plus-opacity 2s infinite ease-in-out;
-  fill:var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .logo-title {
@@ -243,11 +245,11 @@ form {
   fill: var(--ui-medium);
 }
 
-.bg-color{
-  padding:10px;
+.bg-color {
+  padding: 10px;
   background-color: var(--ui-semi-dark);
   border-radius: 5px;
-  margin:15px;
+  margin: 15px;
 }
 
 .modal-button-container {
@@ -278,7 +280,7 @@ img {
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
-  fill:white;
+  fill: white;
 }
 
 img:hover {
@@ -391,6 +393,10 @@ input[type=button]:active {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
   color: var(--ui-dark);
+}
+
+#reset-grid {
+  width: 95px;
 }
 
 /*-------------------

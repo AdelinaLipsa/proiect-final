@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const canvas = $('#my-node');
   const body = $('body');
-
+  const pixel= ".cell";
   let removeGrid = false;
   let gridColor = $('#grid-color');
 
@@ -13,13 +13,16 @@ $(document).ready(function () {
   let oldFillColor;
   let modalError = $(".modal-error");
 
-  let width = 30;
-  let height = 30;
+  let width = 8;
+  let height = 8;
 
   let eight = $(".eight");
   let twelve = $(".twelve");
   let sixteen = $(".sixteen");
   let thirtytwo = $(".thirtytwo");
+
+
+  makeGrid();
 
   canvas.on('mousedown', 'td', function (e) {
     e.preventDefault();
@@ -156,14 +159,19 @@ $(document).ready(function () {
 
   function makeGrid() {
     canvas.empty();
-    for (let i = 0; i < height; i++) {
-      canvas.append($('<tr />').attr('data-row', i));
+    for (let row = 0; row < height; row++) {
+      canvas.append($('<tr />').attr('data-row', row));
       currentRow = canvas.children().last();
-      for (let i = 0; i < width; i++) {
-        currentRow.append($('<td bgcolor="white"></td>').attr('data-col', i));
+      for (let col = 0; col < width; col++) {
+        currentRow.append($('<td bgcolor="white"></td>').attr('data-col', col));
       }
     }
   }
+
+  $("#reset-grid").on("click", function(){
+    canvas.empty();
+    makeGrid();
+  });
 
   function highlightSquares(clickedCell) {
     clickedCell.css('background-color', currentColor.val());
@@ -291,4 +299,16 @@ $(document).ready(function () {
     modalError.fadeOut(500);
   });
 
+  // function infoLog(width, height) {
+  //   $('#dimension').text("grid size");
+  //   $('#cell-x').text("W : " + width + " px");
+  //   $('#cell-y').text("H : " + height + " px");
+  //   $('#position').text("position");
+  // }
+  // canvas.on('mouseover', pixel, function positionLog(posx, posy) {
+  //    posx = canvas.data('col');
+  //    posy = canvas.data('row');
+  //   $('#pos-x').text("X : " + posx + " px");
+  //   $('#pos-y').text("Y : " + posy + " px");
+  // });
 });
