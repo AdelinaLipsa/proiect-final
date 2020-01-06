@@ -50,6 +50,15 @@ html {
   position:absolute;
 }
 
+#right-sidebar{
+  background: var(--ui-dark);
+  min-height: 100vh;
+  width: 250px;
+  position:absolute;
+  right:0;
+  color:var(--ui-lightest);
+}
+
 #remove-grid{
   width:150px;
 }
@@ -103,7 +112,7 @@ tr {
 
 td {
   background: white;
-  border: 1px solid var(--ui-lightest);
+  border: 1px solid black;
   box-sizing: border-box;
   width: 20px;
   cursor: crosshair;
@@ -139,9 +148,9 @@ form {
   display: flex;
   height: 30px;
   justify-content: center;
-  left: 129px;
-  margin-left: 99px;
   width: 30px;
+  right:30px;
+  margin-left: 150px;
 }
 
 .logo-plus .plus {
@@ -150,11 +159,12 @@ form {
   -moz-animation: plus-opacity 2s infinite ease-in-out;
   -o-animation: plus-opacity 2s infinite ease-in-out;
   -webkit-animation: plus-opacity 2s infinite ease-in-out;
-  width: 56%;
+  fill:var(--accent-color);
 }
 
 .logo-title {
-  margin-top: -39px;
+  margin-top: -43px;
+  margin-left: 60px;
 }
 
 .logo-title h1 {
@@ -237,6 +247,7 @@ form {
   padding:10px;
   background-color: var(--ui-semi-dark);
   border-radius: 5px;
+  margin:15px;
 }
 
 .modal-button-container {
@@ -267,6 +278,7 @@ img {
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
+  fill:white;
 }
 
 img:hover {
