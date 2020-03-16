@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    background-color:#302a4b;
+}
+
+html{
+  cursor: none;
+}
+
+
+a:hover,a:focus {
+  cursor: none;
+  transform: scale(1.2);
+  transition: transform 0.2s; /* Animation */
+}
