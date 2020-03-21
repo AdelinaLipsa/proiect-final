@@ -1,285 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>adelina lipsa</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2926c10e78.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>adelina lipsa</title>
-  <link href="./css/style.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/2926c10e78.js"></script>
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="brand">
+        <a class="navbar-brand" href="#">
+          <span class="tag">&lt;</span>
+          <span class="logo-text">adelina</span
+          ><span class="center">Lipsa</span>
+          <span class="tag">/&gt;</span>
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-    <div class="brand">
-      <a class="navbar-brand" href="#">
-        <span class="tag">&lt;</span>
-        <span class="logo-text">adelina</span><span class="center">Lipsa</span>
-        <span class="tag">/&gt;</span>
-      </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="tag">/&gt;</span><span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About<span class="tag">/&gt;</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Work<span class="tag">/&gt;</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Contact<span class="tag">/&gt;</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarTogglerDemo02"
+      >
+        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="tag">/&gt;</span
+              ><span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About<span class="tag">/&gt;</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Work<span class="tag">/&gt;</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Contact<span class="tag">/&gt;</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- HOME PAGE -->
-  <div id="home">
-    <div class="container">
-      <ul id="scene">
-        <li class="layer" data-depth="0.40">
-          <img src="./img/window1.png" />
-        </li>
-        <li class="layer" data-depth="-0.80"><img src="./img/window2.png" /></li>
-        <li class="layer" data-depth="1.20"><img src="./img/window5.png" /></li>
-      </ul>
-    </div>
-    <span class="title title--top">
-      <h1 class="title__text js-letter">ADELINA<br>LIPSA</h1>
-      <span class="borderFirst js-letter">
-        <span></span><span class="js-letter"></span>
+    <div id="home">
+      <div class="container">
+        <ul id="scene">
+          <li class="layer" data-depth="0.40">
+            <img src="./img/window1.png" />
+          </li>
+          <li class="layer" data-depth="-0.80">
+            <img src="./img/window2.png" />
+          </li>
+          <li class="layer" data-depth="1.20">
+            <img src="./img/window5.png" />
+          </li>
+        </ul>
+      </div>
+      <span class="title title--top">
+        <h1 class="title__text js-letter">ADELINA<br />LIPSA</h1>
+        <span class="borderFirst js-letter">
+          <span></span><span class="js-letter"></span>
+        </span>
+        <p class="title__lead js-letter">
+          web designer /<br />front end developer.
+        </p>
       </span>
-      <p class="title__lead js-letter">
-        web designer /<br />front end developer.
-      </p>
-    </span>
-    <p class="scrollDown">SCROLLDOWN</p>
-  </div>
-  <!-- END OF HOME PAGE -->
+      <p class="scrollDown">SCROLLDOWN</p>
+    </div>
+    <!-- END OF HOME PAGE -->
 
-  <!-- ABOUT ME PAGE-->
-  <div id="about" class="container-fluid">
-    <p class="page-title">About/&gt;</p>
-    <div class="row align-self-top w-100 align-items-start justify-content-center">
-      <div class="pt-0 offseted col-sm-9 col-md-9 offset-sm-2 col-10 offset-1">
-        <div class="mt-5">
-          <div class="code-wrp">
-            <div data-line-nr="01" class="code-l">
-              <div class="methods">class</div>
-              <span class="propname">Adelina Lipsa</span> {
-            </div>
-            <div data-line-nr="02" class="code-l">
-              <div class="dot">··</div>
-              <div class="comment">
-                // Hi again. My name is Adelina and I am a Front End Developer
-                living in Bucharest, Romania.
+    <!-- ABOUT ME PAGE-->
+    <div id="about" class="container-fluid">
+      <p class="page-title">About/&gt;</p>
+      <div
+        class="row align-self-top w-100 align-items-start justify-content-center"
+      >
+        <div
+          class="pt-0 offseted col-sm-9 col-md-9 offset-sm-2 col-10 offset-1"
+        >
+          <div class="mt-5">
+            <div class="code-wrp">
+              <div data-line-nr="01" class="code-l">
+                <div class="methods">class</div>
+                <span class="propname">Adelina Lipsa</span> {
               </div>
-            </div>
-            <div data-line-nr="03" class="code-l">
-              <div class="dot">··</div>
-              <div class="comment">
-                // I am enthusiastic about designing and developing a friendly
-                user interface. :)
+              <div data-line-nr="02" class="code-l">
+                <div class="dot">··</div>
+                <div class="comment">
+                  // Hi again. My name is Adelina and I am a Front End Developer
+                  living in Bucharest, Romania.
+                </div>
               </div>
-            </div>
-            <div data-line-nr="04" class="code-l">
-              <div class="dot">··</div>
-              <div class="comment">
-                // I am always learning new concepts and ideas to stay up to
-                date with technology.
+              <div data-line-nr="03" class="code-l">
+                <div class="dot">··</div>
+                <div class="comment">
+                  // I am enthusiastic about designing and developing a friendly
+                  user interface.
+                </div>
               </div>
-            </div>
-            <div data-line-nr="05" class="code-l">
-              <div class="dot">··</div>
-              <div class="comment">
-                // I'm quietly confident, naturally curious, and perpetually
-                working on improving my chops one design at a time.
+              <div data-line-nr="04" class="code-l">
+                <div class="dot">··</div>
+                <div class="comment">
+                  // I am always learning new concepts and ideas to stay up to
+                  date with technology.
+                </div>
               </div>
-            </div>
-            <div data-line-nr="06" class="code-l">
-              <div class="dot">··</div>
-              <div class="comment">
-                // My primary goal is to expand my front-end web knowledge and
-                create innovative websites using my acquired developer skills.
+              <div data-line-nr="05" class="code-l">
+                <div class="dot">··</div>
+                <div class="comment">
+                  // I'm quietly confident, naturally curious, and perpetually
+                  working on improving my chops one design at a time.
+                </div>
               </div>
+              <div data-line-nr="06" class="code-l">
+                <div class="dot">··</div>
+                <div class="comment">
+                  // My primary goal is to expand my front-end web knowledge and
+                  create innovative websites using my acquired developer skills.
+                </div>
+              </div>
+              <div data-line-nr="07" class="code-l">
+                <div class="dot">··</div>
+                <div class="methods">constructor</div>
+                () {
+              </div>
+              <div data-line-nr="08" class="code-l">
+                <div class="dot">····</div>
+                <span class="scope">this</span>.<span class="prop2">name</span>
+                <span class="scope">=</span>
+                <span class="string">'Adelina Lipsa'</span>
+              </div>
+              <div data-line-nr="09" class="code-l">
+                <div class="dot">····</div>
+                <span class="scope">this</span>.<span class="prop2"
+                  >dayOfBirthTimestamp</span
+                >
+                <span class="scope">=</span>
+                <span class="number">720464400</span>
+              </div>
+              <div data-line-nr="10" class="code-l">
+                <div class="dot">····</div>
+                <span class="scope">this</span>.<span class="prop2">email</span>
+                <span class="scope">=</span>
+                <span class="string">'adelina.lipsa@gmail.com'</span>
+              </div>
+              <div data-line-nr="11" class="code-l">
+                <div class="dot">··</div>
+                }
+              </div>
+              <div data-line-nr="12" class="code-l">
+                <div class="dot">··</div>
+                <span class="propname">education</span>() {
+              </div>
+              <div data-line-nr="13" class="code-l">
+                <div class="dot">····</div>
+                <div class="methods">return</div>
+                [
+              </div>
+              <div data-line-nr="14" class="code-l">
+                <div class="dot">······</div>
+                { <span class="string">'2017-2018'</span>:<span class="string">
+                  'Google Developer Challenge Scholarship - Front End
+                  Development'</span
+                >
+                },
+              </div>
+              <div data-line-nr="15" class="code-l">
+                <div class="dot">······</div>
+                { <span class="string">'2019-2019'</span>:<span class="string">
+                  'Scoala Informala de IT - Web Development'</span
+                >
+                }
+              </div>
+              <div data-line-nr="16" class="code-l">
+                <div class="dot">····</div>
+                ]
+              </div>
+              <div data-line-nr="17" class="code-l">
+                <div class="dot">··</div>
+                }
+              </div>
+              <div data-line-nr="18" class="code-l">
+                <div class="dot">··</div>
+                <span class="propname">skills</span>() {
+              </div>
+              <div data-line-nr="19" class="code-l">
+                <div class="dot">····</div>
+                <div class="methods">return</div>
+                [
+                <span class="string"
+                  >'HTML5/CSS5/JS', 'jQuery', 'Node.js' , 'Bootstrap' , 'SASS' ,
+                  'npm' , 'GIT' , 'Firebase, 'Photoshop/Illustrator' , '
+                  XD'</span
+                >
+                ]
+              </div>
+              <div data-line-nr="20" class="code-l">
+                <div class="dot">··</div>
+                }
+              </div>
+              <div data-line-nr="12" class="code-l">
+                <div class="dot">··</div>
+                <span class="propname">certificates</span>() {
+              </div>
+              <div data-line-nr="13" class="code-l">
+                <div class="dot">····</div>
+                <div class="methods">return</div>
+                [
+              </div>
+              <div data-line-nr="14" class="code-l">
+                <div class="dot">······</div>
+                { <span class="string">'freecodecamp'</span>:<span
+                  class="string"
+                >
+                  'JavaScript Algorithms and Data Structures '</span
+                >
+                },
+              </div>
+              <div data-line-nr="15" class="code-l">
+                <div class="dot">······</div>
+                {
+                <span class="string"
+                  >'National Authority for Qualifications'</span
+                >:<span class="string"> 'Junior Programmer'</span
+                ><span class="cursor"></span>
+                }
+              </div>
+              <div data-line-nr="16" class="code-l">
+                <div class="dot">····</div>
+                ]
+              </div>
+              <div data-line-nr="17" class="code-l">
+                <div class="dot">··</div>
+                }
+              </div>
+              <div data-line-nr="21" class="code-l">}</div>
             </div>
-            <div data-line-nr="07" class="code-l">
-              <div class="dot">··</div>
-              <div class="methods">constructor</div>
-              () {
-            </div>
-            <div data-line-nr="08" class="code-l">
-              <div class="dot">····</div>
-              <span class="scope">this</span>.<span class="prop2">name</span>
-              <span class="scope">=</span>
-              <span class="string">'Adelina Lipsa'</span>
-            </div>
-            <div data-line-nr="09" class="code-l">
-              <div class="dot">····</div>
-              <span class="scope">this</span>.<span class="prop2">dayOfBirthTimestamp</span>
-              <span class="scope">=</span>
-              <span class="number">720464400</span>
-            </div>
-            <div data-line-nr="10" class="code-l">
-              <div class="dot">····</div>
-              <span class="scope">this</span>.<span class="prop2">email</span>
-              <span class="scope">=</span>
-              <span class="string">'adelina.lipsa@gmail.com'</span>
-            </div>
-            <div data-line-nr="11" class="code-l">
-              <div class="dot">··</div>
-              }
-            </div>
-            <div data-line-nr="12" class="code-l">
-              <div class="dot">··</div>
-              <span class="propname">education</span>() {
-            </div>
-            <div data-line-nr="13" class="code-l">
-              <div class="dot">····</div>
-              <div class="methods">return</div>
-              [
-            </div>
-            <div data-line-nr="14" class="code-l">
-              <div class="dot">······</div>
-              { <span class="string">'2017-2018'</span>:<span class="string">
-                'Google Developer Challenge Scholarship - Front End
-                Development'</span>
-              },
-            </div>
-            <div data-line-nr="15" class="code-l">
-              <div class="dot">······</div>
-              { <span class="string">'2019-2019'</span>:<span class="string">
-                'Scoala Informala de IT - Web Development'</span>
-              }
-            </div>
-            <div data-line-nr="16" class="code-l">
-              <div class="dot">····</div>
-              ]
-            </div>
-            <div data-line-nr="17" class="code-l">
-              <div class="dot">··</div>
-              }
-            </div>
-            <div data-line-nr="18" class="code-l">
-              <div class="dot">··</div>
-              <span class="propname">skills</span>() {
-            </div>
-            <div data-line-nr="19" class="code-l">
-              <div class="dot">····</div>
-              <div class="methods">return</div>
-              [
-              <span class="string">'HTML5/CSS5/JS', 'jQuery', 'Node.js' , 'Bootstrap' , 'SASS' ,
-                'npm' , 'GIT' , 'Firebase, 'Photoshop/Illustrator' , '
-                XD'</span> ]
-            </div>
-            <div data-line-nr="20" class="code-l">
-              <div class="dot">··</div>
-              }
-            </div>
-            <div data-line-nr="12" class="code-l">
-              <div class="dot">··</div>
-              <span class="propname">certificates</span>() {
-            </div>
-            <div data-line-nr="13" class="code-l">
-              <div class="dot">····</div>
-              <div class="methods">return</div>
-              [
-            </div>
-            <div data-line-nr="14" class="code-l">
-              <div class="dot">······</div>
-              { <span class="string">'freecodecamp'</span>:<span class="string">
-                'JavaScript Algorithms and Data Structures '</span>
-              },
-            </div>
-            <div data-line-nr="15" class="code-l">
-              <div class="dot">······</div>
-              {
-              <span class="string">'National Authority for Qualifications'</span>:<span class="string"> 'Junior
-                Programmer'</span><span class="cursor"></span>
-              }
-            </div>
-            <div data-line-nr="16" class="code-l">
-              <div class="dot">····</div>
-              ]
-            </div>
-            <div data-line-nr="17" class="code-l">
-              <div class="dot">··</div>
-              }
-            </div>
-            <div data-line-nr="21" class="code-l">}</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END OF ABOUT ME PAGE -->
+    <!-- END OF ABOUT ME PAGE -->
 
-  <!-- CONTACT PAGE -->
-  <div id="contact">
-    <p class="page-title">Contact/&gt;</p>
-    <div class="card">
-      <div class="photo"></div>
-      <div class="banner"></div>
-      <ul>
-          <li><b>Adelina Lipsa</b></li>
-          <li>Web Developer</li>
-  
-      </ul>
-      <button class="contact" id="main-button">click to get in touch</button>
-      <div class="social-media-banner">
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-facebook"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-linkedin"></i></a>
+    <!-- WORK PAGE -->
+    <p class="page-title">Work/&gt;</p>
+    <ul id="projects">
+      <li id="p1" class="flipper">
+        <div class="front">
+          <img
+            src="https://dribbble.s3.amazonaws.com/users/1960/screenshots/948220/icons_1x.png"
+            alt=""
+          />
+        </div>
+        <div class="back">
+          <h2>Glyph Profiles</h2>
+          <p class="author">
+            by <a href="http://dribbble.com/brandclay">Sean Farrell</a>
+          </p>
+          <p>
+            Doing some illustrations for Glyph. From left to right: Foodie,
+            Explorer, Gas Guzzler, Gatherer, Superstar, and Shopaholic.
+          </p>
+          <p>
+            Probably going to iterate some more on foodie. I like it because
+            it's minimal, but some don't get that it's sushi.
+          </p>
+          <p class="date">Feb 18, 2013</p>
+        </div>
+      </li>
+      <!--
+  -->
+      <li id="p2" class="flipper">
+        <div class="front">
+          <img
+            src="https://dribbble.s3.amazonaws.com/users/8868/screenshots/949182/_dribbble____024_-_itsy_theme__22minimal_22.png"
+            alt=""
+          />
+        </div>
+        <div class="back">
+          <h2>Itsy theme "minimal"</h2>
+          <p class="author">
+            by <a href="http://dribbble.com/hiroshi1012">hiroshi</a>
+          </p>
+          <p>Itsy Theme "minimal"</p>
+          <p>
+            ↓ Download<br />
+            https://cl.ly/Mzol
+          </p>
+          <p class="date">Feb 18, 2013</p>
+        </div>
+      </li>
+      <!--
+  -->
+      <li id="p3" class="flipper">
+        <div class="front">
+          <img
+            src="https://dribbble.s3.amazonaws.com/users/3587/screenshots/948687/untitled-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="back">
+          <h2>Portfolio Design</h2>
+          <p class="author">
+            by
+            <a href="http://dribbble.com/NpaulFlavius">Paul Flavius Nechita</a>
+          </p>
+          <p>
+            A concept I've put together for my lovely Elena Greta Apostol. This
+            is meant to be a portfolio/store that should reflect the quality of
+            her work.
+          </p>
+          <p>
+            I'd really like to know what you guys think.
+          </p>
+          <p class="date">Feb 18, 2013</p>
+        </div>
+      </li>
+    </ul>
+    <!-- END OF WORK PAGE -->
+    
+    <!-- CONTACT PAGE -->
+    <section id="contact">
+      <p class="page-title">Contact/&gt;</p>
+
+      <div class="contact-wrapper">
+        <!---------------- 
+    
+          CONTACT PAGE LEFT 
+        
+          ----------------->
+
+        <form
+          class="form-horizontal"
+          role="form"
+          method="post"
+          action="contact.php"
+        >
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                rows="10"
+                placeholder="MESSAGE"
+                name="message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group">
+              <button
+                class="btn btn-primary send-button"
+                id="submit"
+                type="submit"
+                value="SEND"
+              >
+                <div class="button">
+                  <i class="fa fa-paper-plane fa-2x"></i
+                  ><span class="send-text">SEND</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!---------------- 
+    
+          CONTACT PAGE RIGHT 
+        
+          ----------------->
+
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fas fa-map-marker-alt fa-2x">
+                <span class="contact-text place">Bucharest | Romania</span></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fas fa-mobile-alt fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:1-212-555-5555" title="Give me a call"
+                    >(0745) 362 663</a
+                  ></span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fas fa-inbox fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="Send me an email"
+                    >adelina.lipsa@gmail.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+
+          <hr />
+          <ul class="social-media-list">
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fab fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fab fa-codepen" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+        </div>
       </div>
-    <form class="email-form">
-          <input id="name" type="text" placeholder="name">
-          <input id="email" type="text" placeholder="email">
-          <textarea id="comment" type="text" placeholder="comment"></textarea>
-          <button class="contact">send</button>
-    </form>
+    </section>
+    <div id="footer">
+      
+      <footer>
+        <div class="gooey-animations"></div>
+      </footer>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      
+      
+      <svg viewbox="0 0 1440 328" width="100vw">
+          <defs>
+              <clipPath id="wave" clipPathUnits="objectBoundingBox" transform="scale(0.00069444444, 0.00304878048)">
+                  <path d="M504.452 27.7002C163.193 -42.9551 25.9595 38.071 0 87.4161V328H1440V27.7002C1270.34 57.14 845.711 98.3556 504.452 27.7002Z"/>
+              </clipPath>
+          </defs>
+      </svg>
     </div>
-  </div>
-  <!-- END OF CONTACT PAGE -->
-</body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script> -->
-<!-- <script>
+    <!-- END OF CONTACT PAGE -->
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script> -->
+  <!-- <script>
     new kursor({
       // removeDefaultCursor: true,
       type: 1,
       color: "rgb(255,255,255)"
     });
   </script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script>
-  var scene = document.getElementById("scene");
-  var parallax = new Parallax(scene);
-</script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script>
+    var scene = document.getElementById("scene");
+    var parallax = new Parallax(scene);
+  </script>
 </html>
