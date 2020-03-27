@@ -23,6 +23,7 @@
   padding: 0;
   vertical-align: baseline;
   text-align: center;
+  overflow:hidden;
 }
 
 body {
@@ -42,7 +43,7 @@ html {
 
 
 #sidebar {
-  background: var(--ui-dark);
+  background: var(--ui-medium);
   left: 0;
   min-height: 100vh;
   transition: all .5s ease;
@@ -271,7 +272,7 @@ input[type=color] {
 }
 
 .cell-hover {
-  background-color: gray;
+  background-color: var(--ui-darkest);
 }
 
 img {
@@ -382,7 +383,7 @@ input[type=button] {
   text-transform: uppercase;
   transition: all .5s ease;
   -webkit-appearance: none;
-  width: 95px;
+  width: 150px;
 }
 
 input[type=submit]:hover,
@@ -396,7 +397,7 @@ input[type=button]:active {
 }
 
 #reset-grid {
-  width: 95px;
+  width: 150px;
 }
 
 /*-------------------
