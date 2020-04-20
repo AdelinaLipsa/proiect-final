@@ -85,6 +85,7 @@ button:hover{
   }
   .answers{
     font-size: 15px;
+    margin:10px;
   }
 
   img{
@@ -92,7 +93,7 @@ button:hover{
   }
 
   button{
-    margin-top: 300px;
+    margin-top: 280px;
     display: inline-block;
     font-size: 12px;
   }
