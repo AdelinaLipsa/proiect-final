@@ -73,3 +73,27 @@ button:hover{
   height: 200px;
   margin-top: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+   font-size: 15px;
+   margin:10px;
+  }
+  .question{
+    font-size: 15px;
+    margin:10px;
+  }
+  .answers{
+    font-size: 15px;
+  }
+
+  img{
+    width: 250px;
+  }
+
+  button{
+    margin-top: 350px;
+    display: inline-block;
+    font-size: 12px;
+  }
+}
