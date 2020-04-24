@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>adelina lipsa</title>
   <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png" />
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -21,10 +22,22 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/2926c10e78.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
 </head>
 
 <body>
+  <div class="loader">
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="brand">
       <a class="navbar-brand" href="#">
@@ -47,7 +60,7 @@
           <a class="nav-link" href="#about">About<span class="tag">/&gt;</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#work">Work<span class="tag">/&gt;</span></a>
+          <a class="nav-link" href="#projects">Projects<span class="tag">/&gt;</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#contact">Contact<span class="tag">/&gt;</span></a>
@@ -72,11 +85,12 @@
       </ul>
     </div>
     <span class="title title--top">
-      <h1 class="title__text js-letter">ADELINA<br />LIPSA</h1>
-      <span class="borderFirst js-letter">
-        <span></span><span class="js-letter"></span>
+      <h1 class="title__text" data-aos="fade-up">
+        ADELINA<br />LIPSA</h1>
+      <span class="borderFirst">
+        <span></span><span></span>
       </span>
-      <p class="title__lead js-letter">
+      <p class="title__lead " data-aos="fade-down">
         web designer /<br />front end developer.
       </p>
     </span>
@@ -85,18 +99,22 @@
   <!-- END OF HOME PAGE -->
 
   <!-- ABOUT ME PAGE-->
+  <div class="banner">
+    <!-- for curve d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19  -->
+    <svg width="100%" height="250px" viewBox="0 0 1098.72 89.55">
+      <path id="curve" fill="transparent" d="M 10 10 L 1200 10">
+      </path>
+      <text width="100%" style="transform:translate3d(0,0,0);">
+        <textPath style="transform:translate3d(0,0,0);" alignment-baseline="central" xlink:href="#curve"
+          startOffset="1200px" id="text-path">ABOUT ME/&gt;</textPath>
+      </text>
+    </svg>
+  </div>
   <div id="about" class="container-fluid">
-    <div class="banner">
-      <p class="page-title opacity100">About/&gt;</p>
-      <p class="page-title opacity80">About/&gt;</p>
-      <p class="page-title opacity60">About/&gt;</p>
-      <p class="page-title opacity40">About/&gt;</p>
-      <p class="page-title opacity20">About/&gt;</p>
-    </div>
     <div class="row align-self-top w-100 align-items-start justify-content-center">
       <div class="pt-0 offseted col-sm-9 col-md-9 offset-sm-2 col-10 offset-1">
         <div class="mt-5">
-          <div class="code-wrp">
+          <div class="code-wrp" data-aos="flip-left">
             <div data-line-nr="01" class="code-l">
               <div class="methods">class</div>
               <span class="propname">Adelina Lipsa</span> {
@@ -201,46 +219,45 @@
               <div class="dot">····</div>
               <div class="methods">return</div>
               [
-              <span class="string">'HTML5/CSS5/JS', 'jQuery', 'Node.js' , 'Bootstrap' , 'SASS' ,
-                'npm' , 'GIT' , 'Firebase, 'Photoshop/Illustrator' , '
-                XD'</span>
+              <span class="string">'HTML5/CSS5/JS', 'React', 'Pug', 'jQuery', 'Node.js' , 'Bootstrap' ,
+                'SASS', 'GIT' , 'Firebase, 'Photoshop/Illustrator' , 'XD'</span>
               ]
             </div>
             <div data-line-nr="20" class="code-l">
               <div class="dot">··</div>
               }
             </div>
-            <div data-line-nr="12" class="code-l">
+            <div data-line-nr="21" class="code-l">
               <div class="dot">··</div>
               <span class="propname">certificates</span>() {
             </div>
-            <div data-line-nr="13" class="code-l">
+            <div data-line-nr="22" class="code-l">
               <div class="dot">····</div>
               <div class="methods">return</div>
               [
             </div>
-            <div data-line-nr="14" class="code-l">
+            <div data-line-nr="23" class="code-l">
               <div class="dot">······</div>
               { <span class="string">'freecodecamp'</span>:<span class="string">
                 'JavaScript Algorithms and Data Structures '</span>
               },
             </div>
-            <div data-line-nr="15" class="code-l">
+            <div data-line-nr="24" class="code-l">
               <div class="dot">······</div>
               {
               <span class="string">'National Authority for Qualifications'</span>:<span class="string"> 'Junior
                 Programmer'</span><span class="cursor"></span>
               }
             </div>
-            <div data-line-nr="16" class="code-l">
+            <div data-line-nr="25" class="code-l">
               <div class="dot">····</div>
               ]
             </div>
-            <div data-line-nr="17" class="code-l">
+            <div data-line-nr="26" class="code-l">
               <div class="dot">··</div>
               }
             </div>
-            <div data-line-nr="21" class="code-l">}</div>
+            <div data-line-nr="27" class="code-l">}</div>
           </div>
         </div>
       </div>
@@ -249,211 +266,143 @@
   <!-- END OF ABOUT ME PAGE -->
 
   <!-- WORK PAGE -->
-  <div id="work">
-    <div class="banner">
-      <p class="page-title opacity100">Work/&gt;</p>
-      <p class="page-title opacity80">Work/&gt;</p>
-      <p class="page-title opacity60">Work/&gt;</p>
-      <p class="page-title opacity40">Work/&gt;</p>
-      <p class="page-title opacity20">Work/&gt;</p>
+  <div id="projects">
+    <span id="blotz"></span> &nbsp;
+    <div class="row row-cols-1 row-cols-md-1 row-cols-xl-3 row-cols-sm-1 mx-5 my-5 w-70" data-aos="zoom-in">
+      <div class="col mb-4">
+        <div class="card h-100 align-middle">
+          <img src="./img/Hubgets.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hubgets page design</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 align-middle">
+        <div class="card h-100">
+          <img src="./img/calculator.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Neumorphism design for Calculator</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 align-middle">
+        <div class="card h-100">
+          <img src="./img/Vacation.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Travel agency page design</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 align-middle">
+        <div class="card h-100">
+          <img src="./img/Online Shop.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">E-commerce website: Apple store</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 align-middle">
+        <div class="card h-100">
+          <img src="./img/Weather App.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Web Weather App</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 align-middle">
+        <div class="card h-100">
+          <img src="./img/Friends quiz.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Friends TV Show Quiz</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 align-middle">
+        <div class="card h-100">
+          <img src="./img/Pixel Art Maker!.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pixel art maker!</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul id="projects">
-      <li id="p1" class="flipper">
-        <div class="front">
-          <img src="./img/hubgets.png" alt="" />
-        </div>
-        <div class="back">
-          <h2>Hubgets page design</h2>
-          <p>
-            <span style="background-color:palevioletred; padding:5px;">SASS</span>&nbsp;/ &nbsp;<span style="background-color:aqua; padding:5px;">HTML5</span>
-          </p>
-          <p>Simple webpage design for Hubgets.</p>
-          <p>
-            ↓ See project here<br />
-            <a
-              href="https://adelinalipsa.github.io/proiect-final/hubgets_project/index.html">adelinalipsa.github.io/proiect-final/hubgets_project</a>
-          </p>
-          <p class="date">Nov, 2019</p>
-        </div>
-      </li>
-      <!--
-    -->
-      <li id="p2" class="flipper">
-        <div class="front">
-          <img src="./img/pixel-art-maker.png" alt="" />
-        </div>
-        <div class="back">
-          <h2>Pixel Art maker</h2>
-          <p>
-            <span style="background-color:palevioletred; padding:5px;">CSS3</span>&nbsp;/ &nbsp;<span style="background-color:aqua; padding:5px;">HTML5</span>&nbsp;/ &nbsp;<span style="background-color: orange; padding:5px;">Jquery</span>&nbsp;/ &nbsp;<span style="background-color: rgb(190, 199, 252); padding:5px;">Javascript</span>
-          </p>
-          <p>This project makes use of the canvas to create pixel art.</p>
-            <p>
-            ↓ See project here<br />
-            <a
-              href="https://adelinalipsa.github.io/proiect-final/pixel_art_maker/index.html">adelinalipsa.github.io/proiect-final/pixel_art_maker</a>
-          </p>
-          <p class="date">Jan, 2020</p>
-        </div>
-      </li>
-      <!--
-    -->
-      <li id="p3" class="flipper">
-        <div class="front">
-          <img src="./img/apple_store.png" alt="" />
-        </div>
-        <div class="back">
-          <h2>Apple Store</h2>
-          <p>
-            <span style="background-color:palevioletred; padding:5px;">CSS3</span>&nbsp;/ &nbsp;<span style="background-color:aqua; padding:5px;">HTML5</span>&nbsp;/ &nbsp;<span style="background-color: rgb(190, 199, 252); padding:5px;">Javascript</span>&nbsp;/ &nbsp;<span style="background-color:palevioletred; padding:5px;">Bootstrap</span>
-          </p>
-          <p>My biggest project yet. This is a functional ecommerce store using Firebase real time database for storing the products. It follows the CRUD model(create,read,delete,update).</p>
-          <p>
-            ↓ See project here<br />
-            <a
-              href="https://adelinalipsa.github.io/proiect-final/apple_store/pages/index.html">adelinalipsa.github.io/proiect-final/apple_store</a>
-          </p>
-          <p class="date">Aug, 2019</p>
-        </div>
-      </li>
-      <li id="p4" class="flipper">
-        <div class="front">
-          <img src="" alt="" />
-        </div>
-        <div class="back">
-          <h2>Weather app</h2>
-          <p>
-            coming soon
-          </p>
-          <p class="date">Mar, 2020</p>
-        </div>
-      </li>
-    </ul>
   </div>
   <!-- END OF WORK PAGE -->
 
   <!-- CONTACT PAGE -->
-  <section id="contact">
-    <div class="banner">
-      <p class="page-title opacity100">Contact/&gt;</p>
-      <p class="page-title opacity80">Contact/&gt;</p>
-      <p class="page-title opacity60">Contact/&gt;</p>
-      <p class="page-title opacity40">Contact/&gt;</p>
-      <p class="page-title opacity20">Contact/&gt;</p>
-    </div>
-    <div class="contact-wrapper">
-      <!---------------- 
-    
-          CONTACT PAGE LEFT 
-        
-          ----------------->
+  <div class="outer-font"></div>
+  <section id="contact" data-aos="fade-right">
+    <div class="wrapper">
+      <div id="left">
+        <div class="background"></div>
+        <img src="./img/me.jpg">
+        <div class="gradient-background">
+          <div class="social-buttons">
 
-      <form class="form-horizontal" role="form" action="contactform.php" method="post">
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" />
+            <ul class="social-buttons-list">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f icon"></i> </a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+              <li>
+                <a href="#"><i class="fab fa-github icon"></i></a></li>
+            </ul>
           </div>
         </div>
-
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" />
+      </div>
+      <div id="right">
+        <div class="contact-container">
+          <div class="contact-description">
+            <p class="right-title"> Let's talk.</p>
+            <p>New projects, freelance inquiry or even a coffee.</p>
           </div>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="6" required></textarea>
+            </div>
+            <button class="button-gradient" type="submit">Send message</button>
+          </form>
         </div>
-
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" />
-          </div>
-        </div>
-
-        <div class="col-sm-12">
-          <div class="form-group">
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="form-group">
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-              <div class="button">
-                <i class="fa fa-paper-plane fa-2x"></i><span class="send-text">SEND</span>
-              </div>
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <!---------------- 
-    
-          CONTACT PAGE RIGHT 
-        
-          ----------------->
-
-      <div class="direct-contact-container">
-        <ul class="contact-list">
-          <li class="list-item">
-            <i class="fas fa-map-marker-alt fa-2x">
-              <span class="contact-text place">Bucharest | Romania</span></i>
-          </li>
-
-          <li class="list-item">
-            <i class="fas fa-mobile-alt fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555"
-                  title="Give me a call">(0745) 362 663</a></span></i>
-          </li>
-
-          <li class="list-item">
-            <i class="fas fa-inbox fa-2x"><span class="contact-text gmail"><a href="mailto:#"
-                  title="Send me an email">adelina.lipsa@gmail.com</a></span></i>
-          </li>
-        </ul>
-
-        <hr />
-        <div class="social-media-list">
-          <a href="https://github.com/AdelinaLipsa" target="_blank" class="contact-icon">
-            <li>
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </li>
-          </a>
-          <a href="https://twitter.com/AdelinaLipsa" target="_blank" class="contact-icon">
-            <li>
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </li>
-          </a>
-          <a href="https://www.linkedin.com/in/adelina-lipșa" target="_blank" class="contact-icon">
-            <li>
-              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-          </a>
-          </li>
-          </a>
-          <a href="https://www.facebook.com/adelina.lipsa1" target="_blank" class="contact-icon">
-            <li>
-              <i class="fab fa-facebook-f" aria-hidden="true"></i>
-            </li>
-          </a>
-          </ul>
-          <hr />
       </div>
     </div>
   </section>
   <!-- END OF CONTACT PAGE -->
-  <footer>
-    Made with /> by
-    <a href="https://www.linkedin.com/in/adelina-lipșa" style="text-decoration:none;">Adelina Lipsa</a>
-  </footer>
+  <script src="script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/blotter.min.js"></script>
+  <script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/channelSplitMaterial.js"></script>
+  <script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
+  <script src="https://rawgit.com/bradley/Blotter/master/build/materials/rollingDistortMaterial.js"></script>
 </body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script> -->
-<!-- <script>
-    new kursor({
-      // removeDefaultCursor: true,
-      type: 1,
-      color: "rgb(255,255,255)"
-    });
-  </script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script>
-  var scene = document.getElementById("scene");
-  var parallax = new Parallax(scene);
-</script>
 
 </html>
