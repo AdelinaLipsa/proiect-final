@@ -6,3 +6,4 @@
 - [Hubgets](https://AdelinaLipsa.github.io/proiect-final/hubgets_project/index.html)
 - [Friends quiz](https://AdelinaLipsa.github.io/proiect-final/friends_quiz/index.html)
 - [Neumorphic calculator](https://AdelinaLipsa.github.io/proiect-final/js_calculator/index.html)
+- [Page design](https://AdelinaLipsa.github.io/proiect-final/clouds_webpage/index.html)
