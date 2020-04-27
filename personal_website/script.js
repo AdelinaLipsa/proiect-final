@@ -48,9 +48,9 @@ $(document).ready(function () {
   // font style for portfolio header
 
   var text = new Blotter.Text('PORTFOLIO', {
-    family: "'LeagueSpartan-Bold'",
+    family: "LeagueSpartan-Black",
     size: 200,
-    paddingLeft: 100,
+    paddingLeft: 0,
     paddingRight: 0
   });
 
