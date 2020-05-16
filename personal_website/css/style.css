@@ -48,7 +48,6 @@
 }
 
 html {
-  font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -73,7 +72,6 @@ a:focus {
 }
 
 body {
-  font-size: 1.6rem;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -137,6 +135,7 @@ img {
   z-index: 1;
   position: relative;
   color: #78707e;
+  font-size: 15px;
 }
 
 #about .code-l:after {
@@ -308,7 +307,7 @@ img {
 }
 
 .title__text {
-  font-size: 12rem;
+  font-size: 9rem;
   line-height: 1;
   margin-bottom: 1.6rem;
   font-family: LeagueSpartan-Black;
@@ -396,7 +395,7 @@ img {
 
 .title__lead {
   color: rgb(0, 0, 0);
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
   font-family: LeagueSpartan-Light;
@@ -475,9 +474,8 @@ img {
 }
 
 .navbar {
-  font-family: LeagueSpartan-Medium;
-  font-size: 2.4rem;
-  letter-spacing: 0.1em;
+  font-family: LeagueSpartan-Bold;
+  font-size: 1.5em;
   position: relative;
   z-index: 1000;
 }
@@ -517,7 +515,7 @@ img {
 }
 
 .navbar-brand {
-  font-size: 2.4rem !important;
+  font-size: 1.5;
   font-family: LeagueSpartanRegular;
   letter-spacing: 0.1em;
   position: relative;
@@ -797,11 +795,11 @@ h2 {
   -webkit-box-shadow: 0px 10px 42px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 42px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 42px -6px rgba(0, 0, 0, 0.75);
+  border: none;
 }
 
 .card-title {
   font-size: 25px;
-  text-align: center;
   font-family: LeagueSpartan-Bold;
 }
 
@@ -810,9 +808,18 @@ h2 {
   color: hsla(0, 0%, 95%, .97);
 }
 
+.card-body .btn {
+  font-size: 15px;
+}
+
 .card-text {
   font-size: 20px;
   font-family: LeagueSpartan-Regular;
+}
+
+.card-footer {
+  font-family: LeagueSpartan-Bold;
+  font-size: 15px;
 }
 
 #contact {
@@ -861,6 +868,16 @@ h2 {
     height: 100vh;
   }
 }
+
+@media screen and (max-width:1280px) {
+
+  #left,
+  #right {
+    height: 100vh;
+
+  }
+}
+
 
 .contact-container {
   width: 70%;
