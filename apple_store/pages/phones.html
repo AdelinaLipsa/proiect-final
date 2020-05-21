@@ -10,7 +10,8 @@
     <link href="../css/phones.css" rel="stylesheet" type="text/css">
     <script src="../js/phones.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2926c10e78.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -24,13 +25,16 @@
                 <a class="nav-link text-light" href="admin.html"><i class="fas fa-lock"></i></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-light" href="cart.html"><i class="fas fa-shopping-cart"></i>&nbsp<span id="itemCounter"></span>
+                <a class="nav-link text-light" href="cart.html"><i class="fas fa-shopping-cart"></i>&nbsp<span
+                        id="itemCounter"></span>
                 </a>
             </li>
         </ul>
-        <div class="form-inline justify-end">
-            <input class="form-control form-control-sm mr-sm-0 py-3" placeholder="Search" aria-label="Search" id="input">
-            <button class="btn btn-outline-light my-2 my-sm-0" id="searchBtn"><i class="fas fa-search"></i></button>
+        <div class="form-inline justify-end w-25">
+            <button class="btn btn-outline-none text-light my-2 my-sm-0" id="searchBtn"><i
+                    class="fas fa-search fa-lg"></i></button>
+            <input class="form-control form-control-sm mr-sm-0 py-3 w-75" placeholder="Search" aria-label="Search"
+                id="input" type="text">
         </div>
     </nav>
     <div class="loader"></div>

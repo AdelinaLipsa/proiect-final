@@ -86,7 +86,7 @@ function drawCart() {
         let itemsInCart = 0;
         let priceTotal = 0;
         for (let key in cart) {
-        var arr = database[key].image.split(" ");
+            var arr = database[key].image.split(" ");
             let subtotal = cart[key].quantity * cart[key].price;
             html += `
            <tr>
@@ -100,7 +100,7 @@ function drawCart() {
            </td>
            <td class="align-middle">${subtotal.toFixed(2)} lei</td>
            <td class="align-middle">
-           <button id = "${key}" class="text-nowrap btn btn-dark" onclick="remove();"><span class="d-none d-sm-inline">Remove</span><i class="fas fa-trash-alt"></i>
+           <button id = "${key}" class="text-nowrap btn btn-dark" onclick="remove();"><span class="d-none d-sm-inline">Remove </span><i class="fas fa-trash-alt"></i>
            </button>
            </td>
            </tr> 
@@ -217,14 +217,14 @@ function checkingStock() {
                         modified = true;
                     }
                 }
-                html+=`
+                html += `
                 <button id="okBtn">Ok</button>
                 </div>
                 `;
                 div.innerHTML = html;
-                div.querySelector('#okBtn').addEventListener('click', function(){
-                    if(Object.keys(cart).length > 0){
-                    div.parentElement.removeChild(div);
+                div.querySelector('#okBtn').addEventListener('click', function () {
+                    if (Object.keys(cart).length > 0) {
+                        div.parentElement.removeChild(div);
                     } else {
                         window.open("phones.html", "_self");
                     }
@@ -242,15 +242,15 @@ function checkingStock() {
 }
 
 
-function itemCounter(){
+function itemCounter() {
     var counter = 0;
-    if(Object.keys(cart).length >0){
-        for(let key in cart){
+    if (Object.keys(cart).length > 0) {
+        for (let key in cart) {
             counter += cart[key].quantity;
         }
-        document.querySelector("#itemCounter").innerHTML= counter;
+        document.querySelector("#itemCounter").innerHTML = counter;
     } else {
-        document.querySelector("#itemCounter").innerHTML ="";
+        document.querySelector("#itemCounter").innerHTML = "";
     }
 }
 
@@ -264,7 +264,6 @@ function syncCart() {
             }
         }
     }
-    localStorage.setItem("cart",JSON.stringify(cart));
-  }
-  
-  
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+

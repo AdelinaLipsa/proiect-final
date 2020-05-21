@@ -74,7 +74,7 @@ function drawDetails() {
     <h3>${database.name.toUpperCase()}</h3><br/>
     <p class="text-justify lead text-center"><b>Description:</b>&nbsp${database.configuration}</p>
     <p class="lead"><b>Price:</b>&nbsp${database.price} lei</p>
-    <p class="lead"><b>Stock:</b>&nbsp${(database.stock<=0)?0:database.stock} buc.</p>
+    <p class="lead"><b>Stock:</b>&nbsp${(database.stock <= 0) ? 0 : database.stock} buc.</p>
     `;
     if (cart[firebaseId] && database.stock === cart[firebaseId].quantity) { // daca stocul produsului e egal cu cantitatea din cos
         html += `
@@ -186,7 +186,7 @@ function popUp() {
     if (sufficientStock) {
         Swal.fire({
             position: 'top-start',
-            type: 'success',
+            icon: 'success',
             title: `${database.name} added to cart!`,
             showConfirmButton: false,
             timer: 1500
