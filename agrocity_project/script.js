@@ -5,7 +5,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
         center: { lat: 44.4268, lng: 26.1025 },
-        mapTypeId: 'terrain'
+        mapTypeId: 'hybrid'
     });
 
     // Define the LatLng coordinates for the polygon.
@@ -188,3 +188,4 @@ function showArrays(event) {
     infoWindow.open(map);
 
 }
+
