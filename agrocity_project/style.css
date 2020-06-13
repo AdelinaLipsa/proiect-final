@@ -1,7 +1,13 @@
 @font-face {
-    src: url("Allura-Regular.otf");
+    src: url("font/Allura-Regular.otf");
     font-family: "Allura";
 }
+
+@font-face {
+    src: url("font/LeagueSpartan-Black.woff");
+    font-family: "Spartan";
+}
+
 
 * {
     margin: 0;
@@ -95,4 +101,38 @@ header {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 68% 75%, 75% 100%, 50% 75%, 0% 75%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 20px;
+}
+
+#about__me {
+    width: 40vw;
+    margin: 50px auto;
+    display: flex;
+    -webkit-box-shadow: 0px 10px 21px 0px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 10px 21px 0px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 10px 21px 0px rgba(0, 0, 0, 0.61);
+    border-radius: 5px;
+    position: relative;
+}
+
+#about__me img {
+    width: 400px;
+    margin: 0;
+    height: 100%;
+}
+
+#about__me .profile__picture {
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+
+}
+
+
+#about__me .profile__descriptions h2 {
+    font-family: "Spartan", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    margin: 50px 0px 10px 60px;
+    font-size: 30px;
+}
+
+#about__me .profile__descriptions .details__name {
+    font-family: "Spartan", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
