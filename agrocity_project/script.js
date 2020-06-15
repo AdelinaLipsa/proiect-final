@@ -29,7 +29,7 @@ function initMap() {
     });
 
     var coordonate_sector2 = [
-        { lat: 44.488355, lng: 26.104903 },
+        { lat: 44.488355, lng: 26.104003 },
         { lat: 44.479207, lng: 26.182757 },
         { lat: 44.456053, lng: 26.156836 },
         { lat: 44.442696, lng: 26.196147 },
